@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;fa9bb27</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
    </div>
   </td>
  </tr>
@@ -81,11 +81,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="NPC_8h.html">Engine/Objects/NPC.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Autonotes_8h.html">Engine/Autonotes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EngineGlobals_8h.html">Engine/EngineGlobals.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Awards_8h.html">Engine/Awards.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Events_8h.html">Engine/Events.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Processor_8h.html">Engine/Events/Processor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Overlays_8h.html">Engine/Graphics/Overlays.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
@@ -94,6 +92,10 @@ $(function() {
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CastSpellInfo_8h.html">Engine/Spells/CastSpellInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AwardTable_8h.html">Engine/Tables/AwardTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AutonoteTable_8h.html">Engine/Tables/AutonoteTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="QuestTable_8h.html">Engine/Tables/QuestTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MessageScrollTable_8h.html">Engine/Tables/MessageScrollTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIHouses_8h.html">GUI/UI/UIHouses.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
@@ -108,18 +110,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a043f76dfc0d8c3e9f3d074f78cda3747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a043f76dfc0d8c3e9f3d074f78cda3747">InitializeAwards</a> ()</td></tr>
-<tr class="separator:a043f76dfc0d8c3e9f3d074f78cda3747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafaea893b03e3c55735bdabdb076b606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#aafaea893b03e3c55735bdabdb076b606">InitializeScrolls</a> ()</td></tr>
-<tr class="separator:aafaea893b03e3c55735bdabdb076b606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec1aa7ddd3e7865d9cb11dece846217f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#aec1aa7ddd3e7865d9cb11dece846217f">InitializeMerchants</a> ()</td></tr>
 <tr class="separator:aec1aa7ddd3e7865d9cb11dece846217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae41fb23005c98d9bbb14a9b0e4339f57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#ae41fb23005c98d9bbb14a9b0e4339f57">InitializeTransitions</a> ()</td></tr>
 <tr class="separator:ae41fb23005c98d9bbb14a9b0e4339f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af053ca5ac93568183e07c36118ccf9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#af053ca5ac93568183e07c36118ccf9ab">InitializeAutonotes</a> ()</td></tr>
-<tr class="separator:af053ca5ac93568183e07c36118ccf9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4adf1abc138e731cd95454968eb157"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a5a4adf1abc138e731cd95454968eb157">InitializeQuests</a> ()</td></tr>
-<tr class="separator:a5a4adf1abc138e731cd95454968eb157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac02f307e9fa837b11c38cb77e5637682"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#ac02f307e9fa837b11c38cb77e5637682">CheckPortretAgainstSex</a> (int portret_num, int sex)</td></tr>
 <tr class="separator:ac02f307e9fa837b11c38cb77e5637682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4517f2a0e834d6f33d1a06c3a6e00a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNPCData.html">NPCData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a8f4517f2a0e834d6f33d1a06c3a6e00a">GetNPCData</a> (signed int npcid)</td></tr>
@@ -134,14 +128,12 @@ Functions</h2></td></tr>
 <tr class="separator:a0d9b50c44576de7da3caff7d301ddab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58a376999ccce3cb142578b812b47124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a58a376999ccce3cb142578b812b47124">_4B4224_UpdateNPCTopics</a> (int _this)</td></tr>
 <tr class="separator:a58a376999ccce3cb142578b812b47124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25757143328dd4d862cb5cbc5861da8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#ac25757143328dd4d862cb5cbc5861da8">NPCDialogueEventProcessor</a> (int npc_event_id, int entry_line)</td></tr>
-<tr class="separator:ac25757143328dd4d862cb5cbc5861da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86fab3323cdfca65990849099e87551"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#ac86fab3323cdfca65990849099e87551">GetGreetType</a> (signed int SpeakingNPC_ID)</td></tr>
 <tr class="separator:ac86fab3323cdfca65990849099e87551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcced0757c52caa3a575af2b433994fd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#abcced0757c52caa3a575af2b433994fd">GetProfessionActionText</a> (<a class="el" href="NPCEnums_8h.html#ae6501f571f97d74c2c78fddcb371bad4">NPCProf</a> prof)</td></tr>
 <tr class="separator:abcced0757c52caa3a575af2b433994fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfce0b79ca64a3c666c5bc7781622842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#acfce0b79ca64a3c666c5bc7781622842">UseNPCSkill</a> (<a class="el" href="NPCEnums_8h.html#ae6501f571f97d74c2c78fddcb371bad4">NPCProf</a> profession)</td></tr>
-<tr class="separator:acfce0b79ca64a3c666c5bc7781622842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fa6cc058304f87cdb110cb5c342d8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a57fa6cc058304f87cdb110cb5c342d8d">UseNPCSkill</a> (<a class="el" href="NPCEnums_8h.html#ae6501f571f97d74c2c78fddcb371bad4">NPCProf</a> profession, int id)</td></tr>
+<tr class="separator:a57fa6cc058304f87cdb110cb5c342d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -153,6 +145,10 @@ Variables</h2></td></tr>
 <tr class="separator:aacd86f6c26e7b363a1be22693d7e1406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8b4db1afd780cdf7ff9ccd02e7a542"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNPCStats.html">NPCStats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a5c8b4db1afd780cdf7ff9ccd02e7a542">pNPCStats</a> = nullptr</td></tr>
 <tr class="separator:a5c8b4db1afd780cdf7ff9ccd02e7a542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ba8fcdead7875fff322eff68a3c5bf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681">Condition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a92ba8fcdead7875fff322eff68a3c5bf">standardConditionsExcludeDead</a> = {<a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a588b0404ffcd6297bf8b31deb54a8072">Condition_Cursed</a>, <a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a19cf6da6bb40f6e877a2fb35a1b23ca2">Condition_Unconscious</a>}</td></tr>
+<tr class="separator:a92ba8fcdead7875fff322eff68a3c5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a819a760f5480df5fad08938cc0c7d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681">Condition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NPC_8cpp.html#a75a819a760f5480df5fad08938cc0c7d">standardConditionsIncludeDead</a> = {<a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a588b0404ffcd6297bf8b31deb54a8072">Condition_Cursed</a>, <a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a63fa0e80f000b84331dbc1972a9ad403">Condition_Eradicated</a>}</td></tr>
+<tr class="separator:a75a819a760f5480df5fad08938cc0c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0bd00a26ea1d9d71b8c2d40f679b7309" name="a0bd00a26ea1d9d71b8c2d40f679b7309"></a>
@@ -182,15 +178,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                <span class="keywordflow">if</span> (EVENT_ID) { \</div>
 <div class="line">                    if (num_menu_buttons &lt; 4) { \</div>
-<div class="line">                        <span class="keywordtype">int</span> res = <a class="code hl_function" href="NPC_8cpp.html#ac25757143328dd4d862cb5cbc5861da8">NPCDialogueEventProcessor</a>(EVENT_ID); \</div>
+<div class="line">                        <span class="keywordtype">int</span> res = <a class="code hl_function" href="Processor_8cpp.html#ac06c4d3aa516284a85bd00ae363b5a2d">npcDialogueEventProcessor</a>(EVENT_ID); \</div>
 <div class="line">                        if (res == 1 || res == 2) \</div>
 <div class="line">                            <a class="code hl_variable" href="GUIWindow_8cpp.html#a4b874ab8ae0f632bb61c5cf097f5f708">pDialogueWindow</a>-&gt;<a class="code hl_function" href="classGUIWindow.html#aca36ee6638714a15664662b9d3c42e81">CreateButton</a>({480, 160 + 30 * num_menu_buttons++}, {140, 30}, 1, 0, <a class="code hl_enumvalue" href="GUIEnums_8h.html#a2519966952faeb9397447ce89e9bcb02ae33d9248d1ac21febe896703ab5d94ed">UIMSG_ClickNPCTopic</a>, MSG_PARAM); \</div>
 <div class="line">                    } \</div>
 <div class="line">                }</div>
-<div class="ttc" id="aGUIEnums_8h_html_a2519966952faeb9397447ce89e9bcb02ae33d9248d1ac21febe896703ab5d94ed"><div class="ttname"><a href="GUIEnums_8h.html#a2519966952faeb9397447ce89e9bcb02ae33d9248d1ac21febe896703ab5d94ed">UIMSG_ClickNPCTopic</a></div><div class="ttdeci">@ UIMSG_ClickNPCTopic</div><div class="ttdef"><b>Definition:</b> GUIEnums.h:150</div></div>
-<div class="ttc" id="aGUIWindow_8cpp_html_a4b874ab8ae0f632bb61c5cf097f5f708"><div class="ttname"><a href="GUIWindow_8cpp.html#a4b874ab8ae0f632bb61c5cf097f5f708">pDialogueWindow</a></div><div class="ttdeci">GUIWindow * pDialogueWindow</div><div class="ttdef"><b>Definition:</b> GUIWindow.cpp:57</div></div>
-<div class="ttc" id="aNPC_8cpp_html_ac25757143328dd4d862cb5cbc5861da8"><div class="ttname"><a href="NPC_8cpp.html#ac25757143328dd4d862cb5cbc5861da8">NPCDialogueEventProcessor</a></div><div class="ttdeci">int NPCDialogueEventProcessor(int npc_event_id, int entry_line)</div><div class="ttdef"><b>Definition:</b> NPC.cpp:1085</div></div>
-<div class="ttc" id="aclassGUIWindow_html_aca36ee6638714a15664662b9d3c42e81"><div class="ttname"><a href="classGUIWindow.html#aca36ee6638714a15664662b9d3c42e81">GUIWindow::CreateButton</a></div><div class="ttdeci">GUIButton * CreateButton(Pointi position, Sizei dimensions, int uButtonType, int uData, UIMessageType msg, unsigned int msg_param, InputAction action=InputAction::Invalid, const std::string &amp;label={}, const std::vector&lt; Image * &gt; &amp;textures={})</div><div class="ttdef"><b>Definition:</b> GUIWindow.cpp:676</div></div>
+<div class="ttc" id="aGUIEnums_8h_html_a2519966952faeb9397447ce89e9bcb02ae33d9248d1ac21febe896703ab5d94ed"><div class="ttname"><a href="GUIEnums_8h.html#a2519966952faeb9397447ce89e9bcb02ae33d9248d1ac21febe896703ab5d94ed">UIMSG_ClickNPCTopic</a></div><div class="ttdeci">@ UIMSG_ClickNPCTopic</div><div class="ttdef"><b>Definition:</b> GUIEnums.h:152</div></div>
+<div class="ttc" id="aGUIWindow_8cpp_html_a4b874ab8ae0f632bb61c5cf097f5f708"><div class="ttname"><a href="GUIWindow_8cpp.html#a4b874ab8ae0f632bb61c5cf097f5f708">pDialogueWindow</a></div><div class="ttdeci">GUIWindow * pDialogueWindow</div><div class="ttdef"><b>Definition:</b> GUIWindow.cpp:59</div></div>
+<div class="ttc" id="aProcessor_8cpp_html_ac06c4d3aa516284a85bd00ae363b5a2d"><div class="ttname"><a href="Processor_8cpp.html#ac06c4d3aa516284a85bd00ae363b5a2d">npcDialogueEventProcessor</a></div><div class="ttdeci">bool npcDialogueEventProcessor(int eventId, int startStep)</div><div class="ttdef"><b>Definition:</b> Processor.cpp:172</div></div>
+<div class="ttc" id="aclassGUIWindow_html_aca36ee6638714a15664662b9d3c42e81"><div class="ttname"><a href="classGUIWindow.html#aca36ee6638714a15664662b9d3c42e81">GUIWindow::CreateButton</a></div><div class="ttdeci">GUIButton * CreateButton(Pointi position, Sizei dimensions, int uButtonType, int uData, UIMessageType msg, unsigned int msg_param, InputAction action=InputAction::Invalid, const std::string &amp;label={}, const std::vector&lt; Image * &gt; &amp;textures={})</div><div class="ttdef"><b>Definition:</b> GUIWindow.cpp:629</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -341,40 +337,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af053ca5ac93568183e07c36118ccf9ab" name="af053ca5ac93568183e07c36118ccf9ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af053ca5ac93568183e07c36118ccf9ab">&#9670;&#160;</a></span>InitializeAutonotes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void InitializeAutonotes </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a043f76dfc0d8c3e9f3d074f78cda3747" name="a043f76dfc0d8c3e9f3d074f78cda3747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a043f76dfc0d8c3e9f3d074f78cda3747">&#9670;&#160;</a></span>InitializeAwards()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void InitializeAwards </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aec1aa7ddd3e7865d9cb11dece846217f" name="aec1aa7ddd3e7865d9cb11dece846217f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec1aa7ddd3e7865d9cb11dece846217f">&#9670;&#160;</a></span>InitializeMerchants()</h2>
 
@@ -383,40 +345,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void InitializeMerchants </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5a4adf1abc138e731cd95454968eb157" name="a5a4adf1abc138e731cd95454968eb157"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a4adf1abc138e731cd95454968eb157">&#9670;&#160;</a></span>InitializeQuests()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void InitializeQuests </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafaea893b03e3c55735bdabdb076b606" name="aafaea893b03e3c55735bdabdb076b606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaea893b03e3c55735bdabdb076b606">&#9670;&#160;</a></span>InitializeScrolls()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void InitializeScrolls </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -437,34 +365,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac25757143328dd4d862cb5cbc5861da8" name="ac25757143328dd4d862cb5cbc5861da8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac25757143328dd4d862cb5cbc5861da8">&#9670;&#160;</a></span>NPCDialogueEventProcessor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int NPCDialogueEventProcessor </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>npc_event_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>entry_line</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -505,8 +405,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acfce0b79ca64a3c666c5bc7781622842" name="acfce0b79ca64a3c666c5bc7781622842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfce0b79ca64a3c666c5bc7781622842">&#9670;&#160;</a></span>UseNPCSkill()</h2>
+<a id="a57fa6cc058304f87cdb110cb5c342d8d" name="a57fa6cc058304f87cdb110cb5c342d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fa6cc058304f87cdb110cb5c342d8d">&#9670;&#160;</a></span>UseNPCSkill()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,8 +415,18 @@ Variables</h2></td></tr>
           <td class="memname">int UseNPCSkill </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="NPCEnums_8h.html#ae6501f571f97d74c2c78fddcb371bad4">NPCProf</a>&#160;</td>
-          <td class="paramname"><em>profession</em></td><td>)</td>
+          <td class="paramname"><em>profession</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -562,6 +472,50 @@ Variables</h2></td></tr>
           <td class="memname">struct <a class="el" href="structNPCStats.html">NPCStats</a>* pNPCStats = nullptr</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92ba8fcdead7875fff322eff68a3c5bf" name="a92ba8fcdead7875fff322eff68a3c5bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ba8fcdead7875fff322eff68a3c5bf">&#9670;&#160;</a></span>standardConditionsExcludeDead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classSegment.html">Segment</a>&lt;<a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681">Condition</a>&gt; standardConditionsExcludeDead = {<a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a588b0404ffcd6297bf8b31deb54a8072">Condition_Cursed</a>, <a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a19cf6da6bb40f6e877a2fb35a1b23ca2">Condition_Unconscious</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75a819a760f5480df5fad08938cc0c7d" name="a75a819a760f5480df5fad08938cc0c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a819a760f5480df5fad08938cc0c7d">&#9670;&#160;</a></span>standardConditionsIncludeDead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classSegment.html">Segment</a>&lt;<a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681">Condition</a>&gt; standardConditionsIncludeDead = {<a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a588b0404ffcd6297bf8b31deb54a8072">Condition_Cursed</a>, <a class="el" href="Conditions_8h.html#a1675b922b385cf7d28bd256fd487a681a63fa0e80f000b84331dbc1972a9ad403">Condition_Eradicated</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

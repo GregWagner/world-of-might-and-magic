@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;fa9bb27</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
    </div>
   </td>
  </tr>
@@ -85,7 +85,6 @@ $(function() {
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Events_8h.html">Engine/Events.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PaletteManager_8h.html">Engine/Graphics/PaletteManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sprites_8h.html">Engine/Graphics/Sprites.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Texture_8h.html">Engine/Graphics/Texture.h</a>&quot;</code><br />
@@ -95,9 +94,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Chest_8h.html">Engine/Objects/Chest.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Objects/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
@@ -137,6 +136,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab17bfb498c0046842747153c59ca8d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670e5a864f1ff089b3fdd9d48c34a740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a670e5a864f1ff089b3fdd9d48c34a740">DrawSpellDescriptionPopup</a> (int spell_index_in_book)</td></tr>
 <tr class="separator:a670e5a864f1ff089b3fdd9d48c34a740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b208e90d085a2e6cae01b057a3f33fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a6b208e90d085a2e6cae01b057a3f33fb">drawBuffPopupWindow</a> ()</td></tr>
+<tr class="separator:a6b208e90d085a2e6cae01b057a3f33fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9d033e0116029f628ef0c4a9a7d306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a4b9d033e0116029f628ef0c4a9a7d306">UI_OnMouseRightClick</a> (int mouse_x, int mouse_y)</td></tr>
 <tr class="separator:a4b9d033e0116029f628ef0c4a9a7d306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e07aedb53720976b171f006eecac70a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a5e07aedb53720976b171f006eecac70a">Inventory_ItemPopupAndAlchemy</a> ()</td></tr>
@@ -166,10 +167,20 @@ Variables</h2></td></tr>
 <tr class="separator:a7f16617ca9c4e79826d2e87d1c8bf2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264c65e8f2b2cb6d9f4135e43a6dddc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classImage.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a264c65e8f2b2cb6d9f4135e43a6dddc1">messagebox_border_right</a> = nullptr</td></tr>
 <tr class="separator:a264c65e8f2b2cb6d9f4135e43a6dddc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e2cd4827b8b05aef41d4391042d6f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#aa9e2cd4827b8b05aef41d4391042d6f5">holdingMouseRightButton</a> = false</td></tr>
+<tr class="separator:aa9e2cd4827b8b05aef41d4391042d6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fe7188ec00c055299f079ae3bca994"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#ab6fe7188ec00c055299f079ae3bca994">rightClickItemActionPerformed</a> = false</td></tr>
+<tr class="separator:ab6fe7188ec00c055299f079ae3bca994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2754ec59c015b1e7039bd99f7780c5d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a2754ec59c015b1e7039bd99f7780c5d2">identifyOrRepairReactionPlayed</a> = false</td></tr>
+<tr class="separator:a2754ec59c015b1e7039bd99f7780c5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056b74c7b973eaef125974f21d279f33"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structstat__coord.html">stat_coord</a>, 26 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a056b74c7b973eaef125974f21d279f33">stat_string_coord</a></td></tr>
 <tr class="separator:a056b74c7b973eaef125974f21d279f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b9952b4d8e32a856cf88296f025c488"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a6b9952b4d8e32a856cf88296f025c488">no_rightlick_in_inventory</a> = false</td></tr>
-<tr class="separator:a6b9952b4d8e32a856cf88296f025c488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271bcf3fdc5ff14473042faddbd0cfa3"><td class="memItemLeft" align="right" valign="top">std::array&lt; int16_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a271bcf3fdc5ff14473042faddbd0cfa3">RightClickPortraitXmin</a> = {{20, 131, 242, 357}}</td></tr>
+<tr class="separator:a271bcf3fdc5ff14473042faddbd0cfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0bb2e5df8caceb874ccbac8afb592b"><td class="memItemLeft" align="right" valign="top">std::array&lt; int16_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a1e0bb2e5df8caceb874ccbac8afb592b">RightClickPortraitXmax</a> = {{83, 198, 312, 423}}</td></tr>
+<tr class="separator:a1e0bb2e5df8caceb874ccbac8afb592b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac301b91e713b85ec45e5337683e92dd4"><td class="memItemLeft" align="right" valign="top">std::array&lt; int8_t, 88 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#ac301b91e713b85ec45e5337683e92dd4">monster_popup_y_offsets</a></td></tr>
+<tr class="separator:ac301b91e713b85ec45e5337683e92dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac566e817fdff46e93721eeb645adaccf" name="ac566e817fdff46e93721eeb645adaccf"></a>
@@ -297,6 +308,32 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b208e90d085a2e6cae01b057a3f33fb" name="a6b208e90d085a2e6cae01b057a3f33fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b208e90d085a2e6cae01b057a3f33fb">&#9670;&#160;</a></span>drawBuffPopupWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void drawBuffPopupWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x41D73D </dd></dl>
 
 </div>
 </div>
@@ -486,6 +523,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="aa9e2cd4827b8b05aef41d4391042d6f5" name="aa9e2cd4827b8b05aef41d4391042d6f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e2cd4827b8b05aef41d4391042d6f5">&#9670;&#160;</a></span>holdingMouseRightButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool holdingMouseRightButton = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2754ec59c015b1e7039bd99f7780c5d2" name="a2754ec59c015b1e7039bd99f7780c5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2754ec59c015b1e7039bd99f7780c5d2">&#9670;&#160;</a></span>identifyOrRepairReactionPlayed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool identifyOrRepairReactionPlayed = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9f76bc5711a93eca57fed43ea7a6ff0d" name="a9f76bc5711a93eca57fed43ea7a6ff0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f76bc5711a93eca57fed43ea7a6ff0d">&#9670;&#160;</a></span>messagebox_border_bottom</h2>
 
@@ -598,18 +663,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b9952b4d8e32a856cf88296f025c488" name="a6b9952b4d8e32a856cf88296f025c488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b9952b4d8e32a856cf88296f025c488">&#9670;&#160;</a></span>no_rightlick_in_inventory</h2>
+<a id="ac301b91e713b85ec45e5337683e92dd4" name="ac301b91e713b85ec45e5337683e92dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac301b91e713b85ec45e5337683e92dd4">&#9670;&#160;</a></span>monster_popup_y_offsets</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int no_rightlick_in_inventory = false</td>
+          <td class="memname">std::array&lt;int8_t, 88&gt; monster_popup_y_offsets</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {-20, 20, 0,   -40, 0,   0,   0,   0,   0,   0,   -50, 20,  0,   -10, -10,</div>
+<div class="line">     -20, 10, -10, 0,   0,   0,   -20, 10,  -10, 0,   0,   0,   -20, -10, 0,</div>
+<div class="line">     0,   0,  -40, -20, 0,   0,   0,   -50, -30, -30, -30, -30, -30, -30, 0,</div>
+<div class="line">     0,   0,  0,   0,   0,   -20, -20, -20, 20,  20,  20,  10,  10,  10,  10,</div>
+<div class="line">     10,  10, -90, -60, -40, -20, -20, -80, -10, 0,   0,   -40, 0,   0,   0,</div>
+<div class="line">     -20, 10, 0,   0,   0,   0,   0,   0,   -60, 0,   0,   0,   0}}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6e4664e8d859215fc6e70476f3c22567" name="a6e4664e8d859215fc6e70476f3c22567"></a>
@@ -620,6 +692,48 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classTexture.html">Texture</a>* parchment = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6fe7188ec00c055299f079ae3bca994" name="ab6fe7188ec00c055299f079ae3bca994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6fe7188ec00c055299f079ae3bca994">&#9670;&#160;</a></span>rightClickItemActionPerformed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rightClickItemActionPerformed = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e0bb2e5df8caceb874ccbac8afb592b" name="a1e0bb2e5df8caceb874ccbac8afb592b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e0bb2e5df8caceb874ccbac8afb592b">&#9670;&#160;</a></span>RightClickPortraitXmax</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int16_t, 4&gt; RightClickPortraitXmax = {{83, 198, 312, 423}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a271bcf3fdc5ff14473042faddbd0cfa3" name="a271bcf3fdc5ff14473042faddbd0cfa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271bcf3fdc5ff14473042faddbd0cfa3">&#9670;&#160;</a></span>RightClickPortraitXmin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int16_t, 4&gt; RightClickPortraitXmin = {{20, 131, 242, 357}}</td>
         </tr>
       </table>
 </div><div class="memdoc">

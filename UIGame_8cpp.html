@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;fa9bb27</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
    </div>
   </td>
  </tr>
@@ -88,12 +88,13 @@ $(function() {
 <code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EngineGlobals_8h.html">Engine/EngineGlobals.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Events_8h.html">Engine/Events.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Processor_8h.html">Engine/Events/Processor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BSPModel_8h.html">Engine/Graphics/BSPModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DecorationList_8h.html">Engine/Graphics/DecorationList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Decoration_8h.html">Engine/Graphics/Level/Decoration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Outdoor_8h.html">Engine/Graphics/Outdoor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Overlays_8h.html">Engine/Graphics/Overlays.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PaletteManager_8h.html">Engine/Graphics/PaletteManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sprites_8h.html">Engine/Graphics/Sprites.h</a>&quot;</code><br />
@@ -104,16 +105,15 @@ $(function() {
 <code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Chest_8h.html">Engine/Objects/Chest.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Objects/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OurMath_8h.html">Engine/OurMath.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IconFrameTable_8h.html">Engine/Tables/IconFrameTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PlayerFrameTable_8h.html">Engine/Tables/PlayerFrameTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="stru123_8h.html">Engine/stru123.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
@@ -175,13 +175,25 @@ Functions</h2></td></tr>
 <tr class="separator:a59c1965982b1f5874ed46f23e3a7d590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8424959389a95f3a45236eec62fbdf01"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a8424959389a95f3a45236eec62fbdf01">GetReputationString</a> (int reputation)</td></tr>
 <tr class="separator:a8424959389a95f3a45236eec62fbdf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfda29c85522af0bb647920c44955383"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#abfda29c85522af0bb647920c44955383">_441A4E_overlay_on_portrait</a> (int a1)</td></tr>
-<tr class="separator:abfda29c85522af0bb647920c44955383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70225fa4405c71b7fe143f2dd18ac0c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a70225fa4405c71b7fe143f2dd18ac0c5">buttonbox</a> (int x, int y, const char *text, int col)</td></tr>
 <tr class="separator:a70225fa4405c71b7fe143f2dd18ac0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a2106de368c401ff4ecd45e1302bbe8e0"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a2106de368c401ff4ecd45e1302bbe8e0">pHealthBarPos</a> = {{23, 138, 251, 366}}</td></tr>
+<tr class="separator:a2106de368c401ff4ecd45e1302bbe8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abada2f56e55b7e4614271e54d9bdc7f7"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#abada2f56e55b7e4614271e54d9bdc7f7">pManaBarPos</a> = {{102, 217, 331, 447}}</td></tr>
+<tr class="separator:abada2f56e55b7e4614271e54d9bdc7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515c4d8d435b979a19ccfcd1a06c807a"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a515c4d8d435b979a19ccfcd1a06c807a">pHiredNPCsIconsOffsetsX</a> = {{489, 559}}</td></tr>
+<tr class="separator:a515c4d8d435b979a19ccfcd1a06c807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c42557b24f3ea430144f465906873f"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a44c42557b24f3ea430144f465906873f">pHiredNPCsIconsOffsetsY</a> = {{152, 152}}</td></tr>
+<tr class="separator:a44c42557b24f3ea430144f465906873f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c53cb5ec1c444f03260028ac21df72a"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; int, 2 &gt;, 14 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a9c53cb5ec1c444f03260028ac21df72a">pPartySpellbuffsUI_XYs</a></td></tr>
+<tr class="separator:a9c53cb5ec1c444f03260028ac21df72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b4dc613aacfb8ea52fecc2e6a39069"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, 14 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a60b4dc613aacfb8ea52fecc2e6a39069">pPartySpellbuffsUI_smthns</a></td></tr>
+<tr class="separator:a60b4dc613aacfb8ea52fecc2e6a39069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b549715d362c75631bbb39cf4bf66fd"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80df">PARTY_BUFF_INDEX</a>, 14 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a8b549715d362c75631bbb39cf4bf66fd">spellBuffsAtRightPanel</a></td></tr>
+<tr class="separator:a8b549715d362c75631bbb39cf4bf66fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa77e0c6d37e7c96d64c7977186428ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classImage.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#aaa77e0c6d37e7c96d64c7977186428ce">game_ui_statusbar</a> = nullptr</td></tr>
 <tr class="separator:aaa77e0c6d37e7c96d64c7977186428ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac454bba36da4d6698e9c2254d2b287b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classImage.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#ac454bba36da4d6698e9c2254d2b287b1">game_ui_rightframe</a> = nullptr</td></tr>
@@ -292,6 +304,16 @@ Variables</h2></td></tr>
 <tr class="separator:a543abee2e05b913e9d2defa6ce586b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae2ad7c33f435cd3ae927d2f385250f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classImage.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a4ae2ad7c33f435cd3ae927d2f385250f">game_ui_playerbuff_bless</a> = nullptr</td></tr>
 <tr class="separator:a4ae2ad7c33f435cd3ae927d2f385250f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ce51d9c7b281b10b915f9dcac8b83e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a47ce51d9c7b281b10b915f9dcac8b83e">bFlashHistoryBook</a></td></tr>
+<tr class="separator:a47ce51d9c7b281b10b915f9dcac8b83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1911a70a6b0b0b63bea3a2b421381778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a1911a70a6b0b0b63bea3a2b421381778">bFlashAutonotesBook</a></td></tr>
+<tr class="separator:a1911a70a6b0b0b63bea3a2b421381778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d3ed5edadc366bc8011a2390ee13c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#aa5d3ed5edadc366bc8011a2390ee13c7">bFlashQuestBook</a></td></tr>
+<tr class="separator:aa5d3ed5edadc366bc8011a2390ee13c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55f9cc1c11ab47de036a5bf5a65e3b3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#aa55f9cc1c11ab47de036a5bf5a65e3b3">bookFlashState</a> = false</td></tr>
+<tr class="separator:aa55f9cc1c11ab47de036a5bf5a65e3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11f377820d5a75638ebf052741fe77a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structGameTime.html">GameTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#ab11f377820d5a75638ebf052741fe77a">bookFlashTimer</a> = <a class="el" href="structGameTime.html">GameTime</a>(0)</td></tr>
+<tr class="separator:ab11f377820d5a75638ebf052741fe77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f70373e8d65f7f76d15ae2ff1511076"><td class="memItemLeft" align="right" valign="top">InputAction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a6f70373e8d65f7f76d15ae2ff1511076">currently_selected_action_for_binding</a></td></tr>
 <tr class="separator:a6f70373e8d65f7f76d15ae2ff1511076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac779193a7bd296fbdcabc8799a780aa0"><td class="memItemLeft" align="right" valign="top">std::map&lt; InputAction, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#ac779193a7bd296fbdcabc8799a780aa0">key_map_conflicted</a></td></tr>
@@ -328,24 +350,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abfda29c85522af0bb647920c44955383" name="abfda29c85522af0bb647920c44955383"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfda29c85522af0bb647920c44955383">&#9670;&#160;</a></span>_441A4E_overlay_on_portrait()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t _441A4E_overlay_on_portrait </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a70225fa4405c71b7fe143f2dd18ac0c5" name="a70225fa4405c71b7fe143f2dd18ac0c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70225fa4405c71b7fe143f2dd18ac0c5">&#9670;&#160;</a></span>buttonbox()</h2>
 
@@ -842,6 +846,92 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a1911a70a6b0b0b63bea3a2b421381778" name="a1911a70a6b0b0b63bea3a2b421381778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1911a70a6b0b0b63bea3a2b421381778">&#9670;&#160;</a></span>bFlashAutonotesBook</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bFlashAutonotesBook</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47ce51d9c7b281b10b915f9dcac8b83e" name="a47ce51d9c7b281b10b915f9dcac8b83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ce51d9c7b281b10b915f9dcac8b83e">&#9670;&#160;</a></span>bFlashHistoryBook</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bFlashHistoryBook</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5d3ed5edadc366bc8011a2390ee13c7" name="aa5d3ed5edadc366bc8011a2390ee13c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d3ed5edadc366bc8011a2390ee13c7">&#9670;&#160;</a></span>bFlashQuestBook</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bFlashQuestBook</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa55f9cc1c11ab47de036a5bf5a65e3b3" name="aa55f9cc1c11ab47de036a5bf5a65e3b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55f9cc1c11ab47de036a5bf5a65e3b3">&#9670;&#160;</a></span>bookFlashState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bookFlashState = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab11f377820d5a75638ebf052741fe77a" name="ab11f377820d5a75638ebf052741fe77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11f377820d5a75638ebf052741fe77a">&#9670;&#160;</a></span>bookFlashTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGameTime.html">GameTime</a> bookFlashTimer = <a class="el" href="structGameTime.html">GameTime</a>(0)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44d0397eb7fe3186fd2fd91f5adeadff" name="a44d0397eb7fe3186fd2fd91f5adeadff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44d0397eb7fe3186fd2fd91f5adeadff">&#9670;&#160;</a></span>curr_key_map</h2>
 
@@ -1690,6 +1780,142 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a2106de368c401ff4ecd45e1302bbe8e0" name="a2106de368c401ff4ecd45e1302bbe8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2106de368c401ff4ecd45e1302bbe8e0">&#9670;&#160;</a></span>pHealthBarPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;unsigned int, 4&gt; pHealthBarPos = {{23, 138, 251, 366}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a515c4d8d435b979a19ccfcd1a06c807a" name="a515c4d8d435b979a19ccfcd1a06c807a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a515c4d8d435b979a19ccfcd1a06c807a">&#9670;&#160;</a></span>pHiredNPCsIconsOffsetsX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;unsigned int, 2&gt; pHiredNPCsIconsOffsetsX = {{489, 559}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44c42557b24f3ea430144f465906873f" name="a44c42557b24f3ea430144f465906873f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c42557b24f3ea430144f465906873f">&#9670;&#160;</a></span>pHiredNPCsIconsOffsetsY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;unsigned int, 2&gt; pHiredNPCsIconsOffsetsY = {{152, 152}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abada2f56e55b7e4614271e54d9bdc7f7" name="abada2f56e55b7e4614271e54d9bdc7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abada2f56e55b7e4614271e54d9bdc7f7">&#9670;&#160;</a></span>pManaBarPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;unsigned int, 4&gt; pManaBarPos = {{102, 217, 331, 447}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60b4dc613aacfb8ea52fecc2e6a39069" name="a60b4dc613aacfb8ea52fecc2e6a39069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b4dc613aacfb8ea52fecc2e6a39069">&#9670;&#160;</a></span>pPartySpellbuffsUI_smthns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;uint8_t, 14&gt; pPartySpellbuffsUI_smthns</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {14, 1, 10, 4, 7, 2, 9, 3, 6, 15, 8, 3, 12, 0}}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c53cb5ec1c444f03260028ac21df72a" name="a9c53cb5ec1c444f03260028ac21df72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c53cb5ec1c444f03260028ac21df72a">&#9670;&#160;</a></span>pPartySpellbuffsUI_XYs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::array&lt;int, 2&gt;, 14&gt; pPartySpellbuffsUI_XYs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {{</div>
+<div class="line">    {{477, 247}},</div>
+<div class="line">    {{497, 247}},</div>
+<div class="line">    {{522, 247}},</div>
+<div class="line">    {{542, 247}},</div>
+<div class="line">    {{564, 247}},</div>
+<div class="line">    {{581, 247}},</div>
+<div class="line">    {{614, 247}},</div>
+<div class="line">    {{477, 279}},</div>
+<div class="line">    {{497, 279}},</div>
+<div class="line">    {{522, 279}},</div>
+<div class="line">    {{542, 279}},</div>
+<div class="line">    {{564, 279}},</div>
+<div class="line">    {{589, 279}},</div>
+<div class="line">    {{612, 279}}</div>
+<div class="line">}}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8b549715d362c75631bbb39cf4bf66fd" name="a8b549715d362c75631bbb39cf4bf66fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b549715d362c75631bbb39cf4bf66fd">&#9670;&#160;</a></span>spellBuffsAtRightPanel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80df">PARTY_BUFF_INDEX</a>, 14&gt; spellBuffsAtRightPanel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfaf8c5cf5be4e693823c7ef7a8e46fc623">PARTY_BUFF_FEATHER_FALL</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa95364e4632a66b4e3033629ee350d101">PARTY_BUFF_RESIST_FIRE</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa0cfd076d0ee96fcabe3f0cbe7ac5f02e">PARTY_BUFF_RESIST_AIR</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa5ddb27c75588446b065c12eb9d5afcc9">PARTY_BUFF_RESIST_WATER</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa25b168c1e2df55713ae2f5b946f411cb">PARTY_BUFF_RESIST_MIND</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa9db51cc9d4c57a15ec0c83b5f59db342">PARTY_BUFF_RESIST_EARTH</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa19d0e136a15d2fd35fd2c5138d1d9c72">PARTY_BUFF_RESIST_BODY</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfad0aea79e5c43712776c90aa7d0cd1625">PARTY_BUFF_HEROISM</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa714e9cc910fc85bd06a140c2b023caf5">PARTY_BUFF_HASTE</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa1bd052767f3c587e3d020387b829696a">PARTY_BUFF_SHIELD</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa138bf4e6964a5755193bbb9b504da7af">PARTY_BUFF_STONE_SKIN</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa5830c2dcd2ccbc70732a6de712218a99">PARTY_BUFF_PROTECTION_FROM_MAGIC</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa0873a4f505e8da2be49aa61b88b9c10d">PARTY_BUFF_IMMOLATION</a>, <a class="code hl_enumvalue" href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfab13703d70e23ca64a2f30328ef02420a">PARTY_BUFF_DAY_OF_GODS</a>}}</div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa0873a4f505e8da2be49aa61b88b9c10d"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa0873a4f505e8da2be49aa61b88b9c10d">PARTY_BUFF_IMMOLATION</a></div><div class="ttdeci">@ PARTY_BUFF_IMMOLATION</div><div class="ttdef"><b>Definition:</b> Party.h:102</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa0cfd076d0ee96fcabe3f0cbe7ac5f02e"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa0cfd076d0ee96fcabe3f0cbe7ac5f02e">PARTY_BUFF_RESIST_AIR</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_AIR</div><div class="ttdef"><b>Definition:</b> Party.h:92</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa138bf4e6964a5755193bbb9b504da7af"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa138bf4e6964a5755193bbb9b504da7af">PARTY_BUFF_STONE_SKIN</a></div><div class="ttdeci">@ PARTY_BUFF_STONE_SKIN</div><div class="ttdef"><b>Definition:</b> Party.h:107</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa19d0e136a15d2fd35fd2c5138d1d9c72"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa19d0e136a15d2fd35fd2c5138d1d9c72">PARTY_BUFF_RESIST_BODY</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_BODY</div><div class="ttdef"><b>Definition:</b> Party.h:93</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa1bd052767f3c587e3d020387b829696a"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa1bd052767f3c587e3d020387b829696a">PARTY_BUFF_SHIELD</a></div><div class="ttdeci">@ PARTY_BUFF_SHIELD</div><div class="ttdef"><b>Definition:</b> Party.h:106</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa25b168c1e2df55713ae2f5b946f411cb"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa25b168c1e2df55713ae2f5b946f411cb">PARTY_BUFF_RESIST_MIND</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_MIND</div><div class="ttdef"><b>Definition:</b> Party.h:104</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa5830c2dcd2ccbc70732a6de712218a99"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa5830c2dcd2ccbc70732a6de712218a99">PARTY_BUFF_PROTECTION_FROM_MAGIC</a></div><div class="ttdeci">@ PARTY_BUFF_PROTECTION_FROM_MAGIC</div><div class="ttdef"><b>Definition:</b> Party.h:105</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa5ddb27c75588446b065c12eb9d5afcc9"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa5ddb27c75588446b065c12eb9d5afcc9">PARTY_BUFF_RESIST_WATER</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_WATER</div><div class="ttdef"><b>Definition:</b> Party.h:109</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa714e9cc910fc85bd06a140c2b023caf5"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa714e9cc910fc85bd06a140c2b023caf5">PARTY_BUFF_HASTE</a></div><div class="ttdeci">@ PARTY_BUFF_HASTE</div><div class="ttdef"><b>Definition:</b> Party.h:100</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa95364e4632a66b4e3033629ee350d101"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa95364e4632a66b4e3033629ee350d101">PARTY_BUFF_RESIST_FIRE</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_FIRE</div><div class="ttdef"><b>Definition:</b> Party.h:98</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfa9db51cc9d4c57a15ec0c83b5f59db342"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfa9db51cc9d4c57a15ec0c83b5f59db342">PARTY_BUFF_RESIST_EARTH</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_EARTH</div><div class="ttdef"><b>Definition:</b> Party.h:96</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfab13703d70e23ca64a2f30328ef02420a"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfab13703d70e23ca64a2f30328ef02420a">PARTY_BUFF_DAY_OF_GODS</a></div><div class="ttdeci">@ PARTY_BUFF_DAY_OF_GODS</div><div class="ttdef"><b>Definition:</b> Party.h:94</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfad0aea79e5c43712776c90aa7d0cd1625"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfad0aea79e5c43712776c90aa7d0cd1625">PARTY_BUFF_HEROISM</a></div><div class="ttdeci">@ PARTY_BUFF_HEROISM</div><div class="ttdef"><b>Definition:</b> Party.h:101</div></div>
+<div class="ttc" id="aParty_8h_html_a7935db13258ffa8a17fd65aa633b80dfaf8c5cf5be4e693823c7ef7a8e46fc623"><div class="ttname"><a href="Party_8h.html#a7935db13258ffa8a17fd65aa633b80dfaf8c5cf5be4e693823c7ef7a8e46fc623">PARTY_BUFF_FEATHER_FALL</a></div><div class="ttdeci">@ PARTY_BUFF_FEATHER_FALL</div><div class="ttdef"><b>Definition:</b> Party.h:97</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

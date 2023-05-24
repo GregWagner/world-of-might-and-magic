@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;fa9bb27</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
    </div>
   </td>
  </tr>
@@ -83,6 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;span&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -92,6 +93,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIHouseEnums_8h.html">GUI/UI/UIHouseEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IndexedBitset_8h.html">Utility/IndexedBitset.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -169,6 +172,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="Party_8h.html#a7ba652169aade3baa03ee56a91cb5dc1a0d4efebf09d06c08133b90267b858d30">PARTY_FLAGS_1_LANDING</a> = 0x0100
 , <br />
 &#160;&#160;<a class="el" href="Party_8h.html#a7ba652169aade3baa03ee56a91cb5dc1a1294e24b863533d78aaee423877e478b">PARTY_FLAGS_1_BURNING</a> = 0x0200
+, <a class="el" href="Party_8h.html#a7ba652169aade3baa03ee56a91cb5dc1a42e483015ae9026ed2caa4eb0c15dda0">PARTY_FLAGS_1_JUMPING</a> = 0x0400
 <br />
  }</td></tr>
 <tr class="separator:a7ba652169aade3baa03ee56a91cb5dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +242,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="Party_8h.html#a1d55b380c0ae0f422472f1de19d01e36a5a3e1b0ba1793049451900a1e065630d">PartyAlignment_Evil</a> = 2
  }</td></tr>
 <tr class="separator:a1d55b380c0ae0f422472f1de19d01e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f91a8d38bb9da7b7b42d5bc4ce1c05"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05">GoldReceivePolicy</a> { <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05ae88c12de7efc4aa8f4ad03c81b925103">GOLD_RECEIVE_SHARE</a>
+, <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05af22442ef2408da0f081e23d055994a3f">GOLD_RECEIVE_NOSHARE_MSG</a>
+, <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05a8d142335d7454e113d2cf6999f35288b">GOLD_RECEIVE_NOSHARE_SILENT</a>
+ }</td></tr>
+<tr class="separator:a29f91a8d38bb9da7b7b42d5bc4ce1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -245,14 +254,10 @@ Functions</h2></td></tr>
 <tr class="separator:a4e3b1773dfc5d7a21fe51039de25d2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c14df23e30ae62c7e581335f3d9a79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#ae9c14df23e30ae62c7e581335f3d9a79">Rest</a> (<a class="el" href="structGameTime.html">GameTime</a> restTime)</td></tr>
 <tr class="separator:ae9c14df23e30ae62c7e581335f3d9a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599ef8a30dd8c1245d9bd515a1f27ecc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a599ef8a30dd8c1245d9bd515a1f27ecc">RestAndHeal</a> (int uNumMinutes)</td></tr>
-<tr class="separator:a599ef8a30dd8c1245d9bd515a1f27ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4bc5b810c765998d778c19b917eb52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a6b4bc5b810c765998d778c19b917eb52">GetTravelTime</a> ()</td></tr>
-<tr class="separator:a6b4bc5b810c765998d778c19b917eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01264472ea7dcb05880846fec64b7c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#aa01264472ea7dcb05880846fec64b7c3">_449B57_test_bit</a> (uint8_t *a1, int16_t a2)</td></tr>
-<tr class="separator:aa01264472ea7dcb05880846fec64b7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcd1576e011d3d4ff119d155742c5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a2dcd1576e011d3d4ff119d155742c5ef">_449B7E_toggle_bit</a> (unsigned char *pArray, int16_t a2, uint16_t bToggle)</td></tr>
-<tr class="separator:a2dcd1576e011d3d4ff119d155742c5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba7afb01c4de95adf6f949cc1ecb160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a4ba7afb01c4de95adf6f949cc1ecb160">restAndHeal</a> (<a class="el" href="structGameTime.html">GameTime</a> restTime)</td></tr>
+<tr class="separator:a4ba7afb01c4de95adf6f949cc1ecb160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6210bf99466b023425f6f0a6e82c66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a9e6210bf99466b023425f6f0a6e82c66">getTravelTime</a> ()</td></tr>
+<tr class="separator:a9e6210bf99466b023425f6f0a6e82c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -277,6 +282,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f91a8d38bb9da7b7b42d5bc4ce1c05">&#9670;&#160;</a></span>GoldReceivePolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05">GoldReceivePolicy</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Controls gold receiving mechanics. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05ae88c12de7efc4aa8f4ad03c81b925103" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05ae88c12de7efc4aa8f4ad03c81b925103"></a>GOLD_RECEIVE_SHARE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05af22442ef2408da0f081e23d055994a3f" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05af22442ef2408da0f081e23d055994a3f"></a>GOLD_RECEIVE_NOSHARE_MSG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05a8d142335d7454e113d2cf6999f35288b" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05a8d142335d7454e113d2cf6999f35288b"></a>GOLD_RECEIVE_NOSHARE_SILENT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a7935db13258ffa8a17fd65aa633b80df" name="a7935db13258ffa8a17fd65aa633b80df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7935db13258ffa8a17fd65aa633b80df">&#9670;&#160;</a></span>PARTY_BUFF_INDEX</h2>
 
@@ -334,6 +367,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a7ba652169aade3baa03ee56a91cb5dc1a7f6dabf76eda41e29a95123c1fe33fd6" name="a7ba652169aade3baa03ee56a91cb5dc1a7f6dabf76eda41e29a95123c1fe33fd6"></a>PARTY_FLAGS_1_STANDING_ON_WATER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7ba652169aade3baa03ee56a91cb5dc1a0d4efebf09d06c08133b90267b858d30" name="a7ba652169aade3baa03ee56a91cb5dc1a0d4efebf09d06c08133b90267b858d30"></a>PARTY_FLAGS_1_LANDING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7ba652169aade3baa03ee56a91cb5dc1a1294e24b863533d78aaee423877e478b" name="a7ba652169aade3baa03ee56a91cb5dc1a1294e24b863533d78aaee423877e478b"></a>PARTY_FLAGS_1_BURNING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7ba652169aade3baa03ee56a91cb5dc1a42e483015ae9026ed2caa4eb0c15dda0" name="a7ba652169aade3baa03ee56a91cb5dc1a42e483015ae9026ed2caa4eb0c15dda0"></a>PARTY_FLAGS_1_JUMPING&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -472,82 +506,21 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa01264472ea7dcb05880846fec64b7c3" name="aa01264472ea7dcb05880846fec64b7c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01264472ea7dcb05880846fec64b7c3">&#9670;&#160;</a></span>_449B57_test_bit()</h2>
+<a id="a9e6210bf99466b023425f6f0a6e82c66" name="a9e6210bf99466b023425f6f0a6e82c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6210bf99466b023425f6f0a6e82c66">&#9670;&#160;</a></span>getTravelTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool _449B57_test_bit </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>a1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>a2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2dcd1576e011d3d4ff119d155742c5ef" name="a2dcd1576e011d3d4ff119d155742c5ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dcd1576e011d3d4ff119d155742c5ef">&#9670;&#160;</a></span>_449B7E_toggle_bit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _449B7E_toggle_bit </td>
-          <td>(</td>
-          <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>pArray</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>a2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>bToggle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b4bc5b810c765998d778c19b917eb52" name="a6b4bc5b810c765998d778c19b917eb52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4bc5b810c765998d778c19b917eb52">&#9670;&#160;</a></span>GetTravelTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GetTravelTime </td>
+          <td class="memname">int getTravelTime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x444D80 </dd></dl>
 
 </div>
 </div>
@@ -577,21 +550,29 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a599ef8a30dd8c1245d9bd515a1f27ecc" name="a599ef8a30dd8c1245d9bd515a1f27ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599ef8a30dd8c1245d9bd515a1f27ecc">&#9670;&#160;</a></span>RestAndHeal()</h2>
+<a id="a4ba7afb01c4de95adf6f949cc1ecb160" name="a4ba7afb01c4de95adf6f949cc1ecb160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba7afb01c4de95adf6f949cc1ecb160">&#9670;&#160;</a></span>restAndHeal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RestAndHeal </td>
+          <td class="memname">void restAndHeal </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>uNumMinutes</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structGameTime.html">GameTime</a>&#160;</td>
+          <td class="paramname"><em>restTime</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Perform resting with healing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">restTime</td><td>Resting time. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x4B1BDB </dd></dl>
 
 </div>
 </div>
