@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -87,23 +87,29 @@ $(function() {
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Outdoor_8h.html">Engine/Graphics/Outdoor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Viewport_8h.html">Engine/Graphics/Viewport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Engine_2Graphics_2Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="LOD_8h.html">Engine/LOD.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="NPC_8h.html">Engine/Objects/NPC.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CharacterEnumFunctions_8h.html">Engine/Objects/CharacterEnumFunctions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Random_8h.html">Engine/Random/Random.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SpellEnumFunctions_8h.html">Engine/Spells/SpellEnumFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IconFrameTable_8h.html">Engine/Tables/IconFrameTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="PlayerFrameTable_8h.html">Engine/Tables/PlayerFrameTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CharacterFrameTable_8h.html">Engine/Tables/CharacterFrameTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time/Time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OurMath_8h.html">Engine/OurMath.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIRest_8h.html">GUI/UI/UIRest.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Logger_8h.html">Library/Logger/Logger.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -111,12 +117,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab6af3751607396afcd1745c1a536ae1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25dbc18fe908ae3947a833127f1cf9e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a25dbc18fe908ae3947a833127f1cf9e2">ui_play_food_anim</a> ()</td></tr>
 <tr class="separator:a25dbc18fe908ae3947a833127f1cf9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9c14df23e30ae62c7e581335f3d9a79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#ae9c14df23e30ae62c7e581335f3d9a79">Rest</a> (<a class="el" href="structGameTime.html">GameTime</a> restTime)</td></tr>
-<tr class="separator:ae9c14df23e30ae62c7e581335f3d9a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba7afb01c4de95adf6f949cc1ecb160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a4ba7afb01c4de95adf6f949cc1ecb160">restAndHeal</a> (<a class="el" href="structGameTime.html">GameTime</a> restTime)</td></tr>
-<tr class="separator:a4ba7afb01c4de95adf6f949cc1ecb160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e3b1773dfc5d7a21fe51039de25d2f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a4e3b1773dfc5d7a21fe51039de25d2f9">TestPartyQuestBit</a> (<a class="el" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2">PARTY_QUEST_BITS</a> bit)</td></tr>
-<tr class="separator:a4e3b1773dfc5d7a21fe51039de25d2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6a8227eec1ad92a9ee0ac326629eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a0e6a8227eec1ad92a9ee0ac326629eb4">Rest</a> (<a class="el" href="classDuration.html">Duration</a> restTime)</td></tr>
+<tr class="separator:a0e6a8227eec1ad92a9ee0ac326629eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0de282b789f70149c2b5a6e0d537b8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#aa0de282b789f70149c2b5a6e0d537b8c">restAndHeal</a> (<a class="el" href="classDuration.html">Duration</a> restTime)</td></tr>
+<tr class="separator:aa0de282b789f70149c2b5a6e0d537b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b5ca74e79a90098ce1559f6d25525c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a97b5ca74e79a90098ce1559f6d25525c">TestPartyQuestBit</a> (<a class="el" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460a">QuestBit</a> bit)</td></tr>
+<tr class="separator:a97b5ca74e79a90098ce1559f6d25525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6210bf99466b023425f6f0a6e82c66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a9e6210bf99466b023425f6f0a6e82c66">getTravelTime</a> ()</td></tr>
 <tr class="separator:a9e6210bf99466b023425f6f0a6e82c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,25 +132,17 @@ Variables</h2></td></tr>
 <tr class="separator:a638b1d8b985f1c7f8b69f2d81286f98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac491d2aeba0335bbbe632bdc3c04cffe"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structActionQueue.html">ActionQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#ac491d2aeba0335bbbe632bdc3c04cffe">pPartyActionQueue</a> = new <a class="el" href="structActionQueue.html">ActionQueue</a></td></tr>
 <tr class="separator:ac491d2aeba0335bbbe632bdc3c04cffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7019f3303c323aa801ec37a9ce02537"><td class="memItemLeft" align="right" valign="top">std::array&lt; bool, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#aa7019f3303c323aa801ec37a9ce02537">playerAlreadyPicked</a></td></tr>
-<tr class="separator:aa7019f3303c323aa801ec37a9ce02537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aef0cae8c5f06417d7ec1ede63ef07b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a2aef0cae8c5f06417d7ec1ede63ef07b">PickedPlayer2_unused</a></td></tr>
-<tr class="separator:a2aef0cae8c5f06417d7ec1ede63ef07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac681d14e0e678b7569efda8044ec536f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#ac681d14e0e678b7569efda8044ec536f">PickedPlayer3_unused</a></td></tr>
-<tr class="separator:ac681d14e0e678b7569efda8044ec536f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46c582c7e908553a896b821f75066a39"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a46c582c7e908553a896b821f75066a39">PickedPlayer4_unused</a></td></tr>
-<tr class="separator:a46c582c7e908553a896b821f75066a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df7846826f7474e38eda28e00af7983"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a78938c88a80dfeac5a9898417a0f62ce"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#a814f70dac9f5bfd0ddd689ef48e4ad90">_pUIAnim_Food</a></td></tr>
-<tr class="separator:a78938c88a80dfeac5a9898417a0f62ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe839022359f3924c0cfb1aa4664aed7"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#a262138669f703ab63acc9dcfb15fed57">_pUIAnim_Gold</a></td></tr>
-<tr class="separator:abe839022359f3924c0cfb1aa4664aed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dbdbd5c915255fab2f3b4c54e4b89fa"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#a175b7af4a0e2125d58d90b043a28b2ff">_pUIAnum_Torchlight</a></td></tr>
-<tr class="separator:a5dbdbd5c915255fab2f3b4c54e4b89fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f734039e58d387e8d1cc1069c9177db"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#af964b423abb946fcf3ec10babd767823">_pUIAnim_WizardEye</a></td></tr>
-<tr class="separator:a4f734039e58d387e8d1cc1069c9177db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df7846826f7474e38eda28e00af7983"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a2df7846826f7474e38eda28e00af7983">_uianim</a></td></tr>
-<tr class="separator:a2df7846826f7474e38eda28e00af7983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b08ef19ba885074b3458a404168171"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:added8d015e62f0414d287f6d758d855f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#a814f70dac9f5bfd0ddd689ef48e4ad90">_pUIAnim_Food</a></td></tr>
+<tr class="separator:added8d015e62f0414d287f6d758d855f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7a48e61bd37597d4d372d828d23b25"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#a262138669f703ab63acc9dcfb15fed57">_pUIAnim_Gold</a></td></tr>
+<tr class="separator:a0e7a48e61bd37597d4d372d828d23b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364c743c34164fcc7a5a4d98c448241f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#a175b7af4a0e2125d58d90b043a28b2ff">_pUIAnum_Torchlight</a></td></tr>
+<tr class="separator:a364c743c34164fcc7a5a4d98c448241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f8ce8088e28a9d4179f70227b299dd"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classUIAnimation.html">UIAnimation</a>&#160;&#160;&#160;<a class="el" href="Party_8cpp.html#af964b423abb946fcf3ec10babd767823">_pUIAnim_WizardEye</a></td></tr>
+<tr class="separator:ac5f8ce8088e28a9d4179f70227b299dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b08ef19ba885074b3458a404168171"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a61b08ef19ba885074b3458a404168171">_uianim</a></td></tr>
+<tr class="separator:a61b08ef19ba885074b3458a404168171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57736ab9d5b15bd203ce973183301961"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUIAnimation.html">UIAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a57736ab9d5b15bd203ce973183301961">pUIAnim_Food</a> = &amp;<a class="el" href="Party_8cpp.html#a814f70dac9f5bfd0ddd689ef48e4ad90">_uianim._pUIAnim_Food</a></td></tr>
 <tr class="separator:a57736ab9d5b15bd203ce973183301961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc24d2defbdaca88cb1e52031353d97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUIAnimation.html">UIAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8cpp.html#a3fc24d2defbdaca88cb1e52031353d97">pUIAnim_Gold</a> = &amp;<a class="el" href="Party_8cpp.html#a262138669f703ab63acc9dcfb15fed57">_uianim._pUIAnim_Gold</a></td></tr>
@@ -175,8 +173,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae9c14df23e30ae62c7e581335f3d9a79" name="ae9c14df23e30ae62c7e581335f3d9a79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9c14df23e30ae62c7e581335f3d9a79">&#9670;&#160;</a></span>Rest()</h2>
+<a id="a0e6a8227eec1ad92a9ee0ac326629eb4" name="a0e6a8227eec1ad92a9ee0ac326629eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6a8227eec1ad92a9ee0ac326629eb4">&#9670;&#160;</a></span>Rest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +182,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void Rest </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structGameTime.html">GameTime</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classDuration.html">Duration</a>&#160;</td>
           <td class="paramname"><em>restTime</em></td><td>)</td>
           <td></td>
         </tr>
@@ -201,8 +199,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ba7afb01c4de95adf6f949cc1ecb160" name="a4ba7afb01c4de95adf6f949cc1ecb160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba7afb01c4de95adf6f949cc1ecb160">&#9670;&#160;</a></span>restAndHeal()</h2>
+<a id="aa0de282b789f70149c2b5a6e0d537b8c" name="aa0de282b789f70149c2b5a6e0d537b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0de282b789f70149c2b5a6e0d537b8c">&#9670;&#160;</a></span>restAndHeal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +208,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void restAndHeal </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structGameTime.html">GameTime</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classDuration.html">Duration</a>&#160;</td>
           <td class="paramname"><em>restTime</em></td><td>)</td>
           <td></td>
         </tr>
@@ -227,8 +225,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e3b1773dfc5d7a21fe51039de25d2f9" name="a4e3b1773dfc5d7a21fe51039de25d2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e3b1773dfc5d7a21fe51039de25d2f9">&#9670;&#160;</a></span>TestPartyQuestBit()</h2>
+<a id="a97b5ca74e79a90098ce1559f6d25525c" name="a97b5ca74e79a90098ce1559f6d25525c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b5ca74e79a90098ce1559f6d25525c">&#9670;&#160;</a></span>TestPartyQuestBit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +234,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool TestPartyQuestBit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2">PARTY_QUEST_BITS</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460a">QuestBit</a>&#160;</td>
           <td class="paramname"><em>bit</em></td><td>)</td>
           <td></td>
         </tr>
@@ -336,70 +334,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2df7846826f7474e38eda28e00af7983" name="a2df7846826f7474e38eda28e00af7983"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2df7846826f7474e38eda28e00af7983">&#9670;&#160;</a></span></h2>
+<a id="a61b08ef19ba885074b3458a404168171" name="a61b08ef19ba885074b3458a404168171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b08ef19ba885074b3458a404168171">&#9670;&#160;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">struct  { ... }  _uianim</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2aef0cae8c5f06417d7ec1ede63ef07b" name="a2aef0cae8c5f06417d7ec1ede63ef07b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aef0cae8c5f06417d7ec1ede63ef07b">&#9670;&#160;</a></span>PickedPlayer2_unused</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char PickedPlayer2_unused</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac681d14e0e678b7569efda8044ec536f" name="ac681d14e0e678b7569efda8044ec536f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac681d14e0e678b7569efda8044ec536f">&#9670;&#160;</a></span>PickedPlayer3_unused</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char PickedPlayer3_unused</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a46c582c7e908553a896b821f75066a39" name="a46c582c7e908553a896b821f75066a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46c582c7e908553a896b821f75066a39">&#9670;&#160;</a></span>PickedPlayer4_unused</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char PickedPlayer4_unused</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa7019f3303c323aa801ec37a9ce02537" name="aa7019f3303c323aa801ec37a9ce02537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7019f3303c323aa801ec37a9ce02537">&#9670;&#160;</a></span>playerAlreadyPicked</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;bool, 4&gt; playerAlreadyPicked</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -488,9 +430,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=  </div>
-<div class="line">    {&amp;<a class="code hl_variable" href="Party_8cpp.html#a2df7846826f7474e38eda28e00af7983">_uianim</a>._pUIAnim_Food, &amp;<a class="code hl_variable" href="Party_8cpp.html#a2df7846826f7474e38eda28e00af7983">_uianim</a>._pUIAnim_Gold,</div>
-<div class="line">     &amp;<a class="code hl_variable" href="Party_8cpp.html#a2df7846826f7474e38eda28e00af7983">_uianim</a>._pUIAnum_Torchlight, &amp;<a class="code hl_variable" href="Party_8cpp.html#a2df7846826f7474e38eda28e00af7983">_uianim</a>._pUIAnim_WizardEye}</div>
-<div class="ttc" id="aParty_8cpp_html_a2df7846826f7474e38eda28e00af7983"><div class="ttname"><a href="Party_8cpp.html#a2df7846826f7474e38eda28e00af7983">_uianim</a></div><div class="ttdeci">struct @59 _uianim</div></div>
+<div class="line">    {&amp;<a class="code hl_variable" href="Party_8cpp.html#a61b08ef19ba885074b3458a404168171">_uianim</a>._pUIAnim_Food, &amp;<a class="code hl_variable" href="Party_8cpp.html#a61b08ef19ba885074b3458a404168171">_uianim</a>._pUIAnim_Gold,</div>
+<div class="line">     &amp;<a class="code hl_variable" href="Party_8cpp.html#a61b08ef19ba885074b3458a404168171">_uianim</a>._pUIAnum_Torchlight, &amp;<a class="code hl_variable" href="Party_8cpp.html#a61b08ef19ba885074b3458a404168171">_uianim</a>._pUIAnim_WizardEye}</div>
+<div class="ttc" id="aParty_8cpp_html_a61b08ef19ba885074b3458a404168171"><div class="ttname"><a href="Party_8cpp.html#a61b08ef19ba885074b3458a404168171">_uianim</a></div><div class="ttdeci">struct @26 _uianim</div></div>
 </div><!-- fragment -->
 </div>
 </div>

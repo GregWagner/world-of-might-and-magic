@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -74,43 +74,51 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">TownPortalBook.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="LOD_8h.html">Engine/LOD.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Pid_8h.html">Engine/Pid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SaveLoad_8h.html">Engine/SaveLoad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Processor_8h.html">Engine/Events/Processor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Spells_8h.html">Engine/Spells/Spells.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TownPortalBook_8h.html">GUI/UI/Books/TownPortalBook.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UIGame_8h.html">GUI/UI/UIGame.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Rect_8h.html">Library/Geometry/Rect.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTownPortalData.html">TownPortalData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0bd6518df972bf628eb1ae4f80695f1d"><td class="memItemLeft" align="right" valign="top">static std::array&lt; int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a0bd6518df972bf628eb1ae4f80695f1d">pTownPortalBook_xs</a> = {260, 324, 147, 385, 390, 19}</td></tr>
-<tr class="separator:a0bd6518df972bf628eb1ae4f80695f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ab942417edb7ee56eb64dab37b9992"><td class="memItemLeft" align="right" valign="top">static std::array&lt; int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a11ab942417edb7ee56eb64dab37b9992">pTownPortalBook_ys</a> = {206, 84, 182, 239, 17, 283}</td></tr>
-<tr class="separator:a11ab942417edb7ee56eb64dab37b9992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2d555d5a61082a39d3eb2eb99b8172"><td class="memItemLeft" align="right" valign="top">static std::array&lt; int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#abe2d555d5a61082a39d3eb2eb99b8172">pTownPortalBook_ws</a> = {80, 66, 68, 72, 67, 74}</td></tr>
-<tr class="separator:abe2d555d5a61082a39d3eb2eb99b8172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7172ab3afa6852a9b61b7daf61ed5a"><td class="memItemLeft" align="right" valign="top">static std::array&lt; int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#aba7172ab3afa6852a9b61b7daf61ed5a">pTownPortalBook_hs</a> = {55, 56, 65, 67, 67, 59}</td></tr>
-<tr class="separator:aba7172ab3afa6852a9b61b7daf61ed5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c085d4e4721a04c480d8dc0e5c093dd"><td class="memItemLeft" align="right" valign="top">static std::array&lt; <a class="el" href="classImage.html">Image</a> *, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a2c085d4e4721a04c480d8dc0e5c093dd">ui_book_townportal_icons</a></td></tr>
-<tr class="separator:a2c085d4e4721a04c480d8dc0e5c093dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01455c757520cd12054d505954865b5c"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a01455c757520cd12054d505954865b5c">townPortalQuestBits</a></td></tr>
-<tr class="separator:a01455c757520cd12054d505954865b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0f4159e4f9a7d9d20f6e5ce1f49aaa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classImage.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#ab0f4159e4f9a7d9d20f6e5ce1f49aaa8">ui_book_townportal_background</a> = nullptr</td></tr>
-<tr class="separator:ab0f4159e4f9a7d9d20f6e5ce1f49aaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71fe649a7cb86149a486ffc4d61084f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#aa71fe649a7cb86149a486ffc4d61084f">townPortalCasterPid</a></td></tr>
-<tr class="separator:aa71fe649a7cb86149a486ffc4d61084f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51108d2a3063bcf5d46dd45711923414"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> = 6</td></tr>
+<tr class="separator:a51108d2a3063bcf5d46dd45711923414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921a4f765a94ad4ddd9f7d6ad465056e"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structTownPortalData.html">TownPortalData</a>, <a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a921a4f765a94ad4ddd9f7d6ad465056e">townPortalList</a></td></tr>
+<tr class="separator:a921a4f765a94ad4ddd9f7d6ad465056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bbbbd6d620b6fc7501a9f90cc8b81a"><td class="memItemLeft" align="right" valign="top">static std::array&lt; <a class="el" href="Rect_8h.html#a32073cc1967b01302be5d39e09079649">Recti</a>, <a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a52bbbbd6d620b6fc7501a9f90cc8b81a">townPortalButtonsPos</a></td></tr>
+<tr class="separator:a52bbbbd6d620b6fc7501a9f90cc8b81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d7784d1e18fa7a544509e9f5983c82"><td class="memItemLeft" align="right" valign="top">static std::array&lt; <a class="el" href="classGraphicsImage.html">GraphicsImage</a> *, <a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a46d7784d1e18fa7a544509e9f5983c82">ui_book_townportal_icons</a></td></tr>
+<tr class="separator:a46d7784d1e18fa7a544509e9f5983c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7916db1dc45dc6602475a0077dc7ab3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraphicsImage.html">GraphicsImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TownPortalBook_8cpp.html#a7916db1dc45dc6602475a0077dc7ab3a">ui_book_townportal_background</a> = nullptr</td></tr>
+<tr class="separator:a7916db1dc45dc6602475a0077dc7ab3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aba7172ab3afa6852a9b61b7daf61ed5a" name="aba7172ab3afa6852a9b61b7daf61ed5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba7172ab3afa6852a9b61b7daf61ed5a">&#9670;&#160;</a></span>pTownPortalBook_hs</h2>
+<a id="a51108d2a3063bcf5d46dd45711923414" name="a51108d2a3063bcf5d46dd45711923414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51108d2a3063bcf5d46dd45711923414">&#9670;&#160;</a></span>TOWN_PORTAL_DESTINATION_COUNT</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,7 +127,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; pTownPortalBook_hs = {55, 56, 65, 67, 67, 59}</td>
+          <td class="memname">const int TOWN_PORTAL_DESTINATION_COUNT = 6</td>
         </tr>
       </table>
   </td>
@@ -131,8 +139,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abe2d555d5a61082a39d3eb2eb99b8172" name="abe2d555d5a61082a39d3eb2eb99b8172"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe2d555d5a61082a39d3eb2eb99b8172">&#9670;&#160;</a></span>pTownPortalBook_ws</h2>
+<a id="a52bbbbd6d620b6fc7501a9f90cc8b81a" name="a52bbbbd6d620b6fc7501a9f90cc8b81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bbbbd6d620b6fc7501a9f90cc8b81a">&#9670;&#160;</a></span>townPortalButtonsPos</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +149,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; pTownPortalBook_ws = {80, 66, 68, 72, 67, 74}</td>
+          <td class="memname">std::array&lt;<a class="el" href="Rect_8h.html#a32073cc1967b01302be5d39e09079649">Recti</a>, <a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; townPortalButtonsPos</td>
         </tr>
       </table>
   </td>
@@ -150,110 +158,68 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0bd6518df972bf628eb1ae4f80695f1d" name="a0bd6518df972bf628eb1ae4f80695f1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bd6518df972bf628eb1ae4f80695f1d">&#9670;&#160;</a></span>pTownPortalBook_xs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; pTownPortalBook_xs = {260, 324, 147, 385, 390, 19}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a11ab942417edb7ee56eb64dab37b9992" name="a11ab942417edb7ee56eb64dab37b9992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11ab942417edb7ee56eb64dab37b9992">&#9670;&#160;</a></span>pTownPortalBook_ys</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; pTownPortalBook_ys = {206, 84, 182, 239, 17, 283}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa71fe649a7cb86149a486ffc4d61084f" name="aa71fe649a7cb86149a486ffc4d61084f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71fe649a7cb86149a486ffc4d61084f">&#9670;&#160;</a></span>townPortalCasterPid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int townPortalCasterPid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a01455c757520cd12054d505954865b5c" name="a01455c757520cd12054d505954865b5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01455c757520cd12054d505954865b5c">&#9670;&#160;</a></span>townPortalQuestBits</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;int, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; townPortalQuestBits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        <a class="code hl_enumvalue" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2abe34184583f9fbe8df29b7bd35760ec1">QBIT_FOUNTAIN_IN_HARMONDALE_ACTIVATED</a>,</div>
-<div class="line">        <a class="code hl_enumvalue" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a27eff5332010ebdc0f4587b198089211">QBIT_FOUNTAIN_IN_PIERPONT_ACTIVATED</a>,</div>
-<div class="line">        <a class="code hl_enumvalue" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a1eeaeed1dc6e006333a30a3857911b78">QBIT_FOUNTAIN_IN_MOUNT_NIGHON_ACTIVATED</a>,</div>
-<div class="line">        <a class="code hl_enumvalue" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a239035f38753af8cd7d2e5164955d667">QBIT_FOUNTAIN_IN_EVENMORN_ISLE_ACTIVATED</a>,</div>
-<div class="line">        <a class="code hl_enumvalue" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2ac76f9fe73da3b4ccb4434ab17db0311c">QBIT_FOUNTAIN_IN_CELESTIA_ACTIVATED</a>,</div>
-<div class="line">        <a class="code hl_enumvalue" href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a914d88537344697380fb173e3c8d22e1">QBIT_FOUNTAIN_IN_THE_PIT_ACTIVATED</a>}</div>
-<div class="ttc" id="aParty_8h_html_a90eae1c60a6a092f2d2ea08550f6cdb2a1eeaeed1dc6e006333a30a3857911b78"><div class="ttname"><a href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a1eeaeed1dc6e006333a30a3857911b78">QBIT_FOUNTAIN_IN_MOUNT_NIGHON_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_MOUNT_NIGHON_ACTIVATED</div><div class="ttdef"><b>Definition:</b> Party.h:59</div></div>
-<div class="ttc" id="aParty_8h_html_a90eae1c60a6a092f2d2ea08550f6cdb2a239035f38753af8cd7d2e5164955d667"><div class="ttname"><a href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a239035f38753af8cd7d2e5164955d667">QBIT_FOUNTAIN_IN_EVENMORN_ISLE_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_EVENMORN_ISLE_ACTIVATED</div><div class="ttdef"><b>Definition:</b> Party.h:63</div></div>
-<div class="ttc" id="aParty_8h_html_a90eae1c60a6a092f2d2ea08550f6cdb2a27eff5332010ebdc0f4587b198089211"><div class="ttname"><a href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a27eff5332010ebdc0f4587b198089211">QBIT_FOUNTAIN_IN_PIERPONT_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_PIERPONT_ACTIVATED</div><div class="ttdef"><b>Definition:</b> Party.h:60</div></div>
-<div class="ttc" id="aParty_8h_html_a90eae1c60a6a092f2d2ea08550f6cdb2a914d88537344697380fb173e3c8d22e1"><div class="ttname"><a href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2a914d88537344697380fb173e3c8d22e1">QBIT_FOUNTAIN_IN_THE_PIT_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_THE_PIT_ACTIVATED</div><div class="ttdef"><b>Definition:</b> Party.h:62</div></div>
-<div class="ttc" id="aParty_8h_html_a90eae1c60a6a092f2d2ea08550f6cdb2abe34184583f9fbe8df29b7bd35760ec1"><div class="ttname"><a href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2abe34184583f9fbe8df29b7bd35760ec1">QBIT_FOUNTAIN_IN_HARMONDALE_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_HARMONDALE_ACTIVATED</div><div class="ttdef"><b>Definition:</b> Party.h:58</div></div>
-<div class="ttc" id="aParty_8h_html_a90eae1c60a6a092f2d2ea08550f6cdb2ac76f9fe73da3b4ccb4434ab17db0311c"><div class="ttname"><a href="Party_8h.html#a90eae1c60a6a092f2d2ea08550f6cdb2ac76f9fe73da3b4ccb4434ab17db0311c">QBIT_FOUNTAIN_IN_CELESTIA_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_CELESTIA_ACTIVATED</div><div class="ttdef"><b>Definition:</b> Party.h:61</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {{</div>
+<div class="line">    {260, 206, 80, 55},</div>
+<div class="line">    {324,  84, 66, 56},</div>
+<div class="line">    {147, 182, 68, 65},</div>
+<div class="line">    {385, 239, 72, 67},</div>
+<div class="line">    {390,  17, 67, 67},</div>
+<div class="line">    { 19, 283, 74, 59}</div>
+<div class="line">}}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab0f4159e4f9a7d9d20f6e5ce1f49aaa8" name="ab0f4159e4f9a7d9d20f6e5ce1f49aaa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0f4159e4f9a7d9d20f6e5ce1f49aaa8">&#9670;&#160;</a></span>ui_book_townportal_background</h2>
+<a id="a921a4f765a94ad4ddd9f7d6ad465056e" name="a921a4f765a94ad4ddd9f7d6ad465056e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921a4f765a94ad4ddd9f7d6ad465056e">&#9670;&#160;</a></span>townPortalList</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classImage.html">Image</a>* ui_book_townportal_background = nullptr</td>
+          <td class="memname">std::array&lt;<a class="el" href="structTownPortalData.html">TownPortalData</a>, <a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; townPortalList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {{</div>
+<div class="line">    {<a class="code hl_typedef" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>( -5121,   2107,    1), 1536, 0, <a class="code hl_enumvalue" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0aeb4825e71137fddf837c498573420273">MAP_CASTLE_HARMONDALE</a>,   <a class="code hl_enumvalue" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa50c30bc1a8e7d8fd2056c3bced78d6c8">QBIT_FOUNTAIN_IN_HARMONDALE_ACTIVATED</a>},</div>
+<div class="line">    {<a class="code hl_typedef" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>(-15148, -10240, 1473),    0, 0, <a class="code hl_enumvalue" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a56315a6a2ac1e0e081a45b270cd4dc59">MAP_TULAREAN_FOREST</a>,     <a class="code hl_enumvalue" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa0e2f7db39a4d88ab0b23ff7df62ec5dc">QBIT_FOUNTAIN_IN_PIERPONT_ACTIVATED</a>},</div>
+<div class="line">    {<a class="code hl_typedef" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>(-10519,   5375,  753),  512, 0, <a class="code hl_enumvalue" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0ae750471f3596c54eb80fe036d272bc4c">MAP_ERATHIA</a>,             <a class="code hl_enumvalue" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa07e258a4a42d52efe74dd9f721e18aed">QBIT_FOUNTAIN_IN_STEADWICK_ACTIVATED</a>},</div>
+<div class="line">    {<a class="code hl_typedef" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>(  3114, -11055,  513),    0, 0, <a class="code hl_enumvalue" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0ada81d2e228ead479c1d3a741c4b778ba">MAP_MOUNT_NIGHON</a>,        <a class="code hl_enumvalue" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa7978ad56e9c15f02e01ea1b1cdf505b4">QBIT_FOUNTAIN_IN_MOUNT_NIGHON_ACTIVATED</a>},</div>
+<div class="line">    {<a class="code hl_typedef" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>(  -158,   7624,    1),  512, 0, <a class="code hl_enumvalue" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a045b31620193fee43a762fe26c9b27bc">MAP_CELESTE</a>,             <a class="code hl_enumvalue" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa4c659055745cd7036d534f685aeea425">QBIT_FOUNTAIN_IN_CELESTIA_ACTIVATED</a>},</div>
+<div class="line">    {<a class="code hl_typedef" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>( -1837,  -4247,   65),   65, 0, <a class="code hl_enumvalue" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a98e0077f3a8d6cbabb36dfeb3c168262">MAP_PIT</a>,                 <a class="code hl_enumvalue" href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa7a754c1251ae2e18ecfbeb03219f7ec8">QBIT_FOUNTAIN_IN_THE_PIT_ACTIVATED</a>}</div>
+<div class="line">}}</div>
+<div class="ttc" id="aMapEnums_8h_html_a270ed629fcd100c7ea16f8c87ebb86a0a045b31620193fee43a762fe26c9b27bc"><div class="ttname"><a href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a045b31620193fee43a762fe26c9b27bc">MapId::MAP_CELESTE</a></div><div class="ttdeci">@ MAP_CELESTE</div></div>
+<div class="ttc" id="aMapEnums_8h_html_a270ed629fcd100c7ea16f8c87ebb86a0a56315a6a2ac1e0e081a45b270cd4dc59"><div class="ttname"><a href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a56315a6a2ac1e0e081a45b270cd4dc59">MapId::MAP_TULAREAN_FOREST</a></div><div class="ttdeci">@ MAP_TULAREAN_FOREST</div></div>
+<div class="ttc" id="aMapEnums_8h_html_a270ed629fcd100c7ea16f8c87ebb86a0a98e0077f3a8d6cbabb36dfeb3c168262"><div class="ttname"><a href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a98e0077f3a8d6cbabb36dfeb3c168262">MapId::MAP_PIT</a></div><div class="ttdeci">@ MAP_PIT</div></div>
+<div class="ttc" id="aMapEnums_8h_html_a270ed629fcd100c7ea16f8c87ebb86a0ada81d2e228ead479c1d3a741c4b778ba"><div class="ttname"><a href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0ada81d2e228ead479c1d3a741c4b778ba">MapId::MAP_MOUNT_NIGHON</a></div><div class="ttdeci">@ MAP_MOUNT_NIGHON</div></div>
+<div class="ttc" id="aMapEnums_8h_html_a270ed629fcd100c7ea16f8c87ebb86a0ae750471f3596c54eb80fe036d272bc4c"><div class="ttname"><a href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0ae750471f3596c54eb80fe036d272bc4c">MapId::MAP_ERATHIA</a></div><div class="ttdeci">@ MAP_ERATHIA</div></div>
+<div class="ttc" id="aMapEnums_8h_html_a270ed629fcd100c7ea16f8c87ebb86a0aeb4825e71137fddf837c498573420273"><div class="ttname"><a href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0aeb4825e71137fddf837c498573420273">MapId::MAP_CASTLE_HARMONDALE</a></div><div class="ttdeci">@ MAP_CASTLE_HARMONDALE</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_aab0780fca5f3ce09b3a361f3eec4460aa07e258a4a42d52efe74dd9f721e18aed"><div class="ttname"><a href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa07e258a4a42d52efe74dd9f721e18aed">QuestBit::QBIT_FOUNTAIN_IN_STEADWICK_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_STEADWICK_ACTIVATED</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_aab0780fca5f3ce09b3a361f3eec4460aa0e2f7db39a4d88ab0b23ff7df62ec5dc"><div class="ttname"><a href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa0e2f7db39a4d88ab0b23ff7df62ec5dc">QuestBit::QBIT_FOUNTAIN_IN_PIERPONT_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_PIERPONT_ACTIVATED</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_aab0780fca5f3ce09b3a361f3eec4460aa4c659055745cd7036d534f685aeea425"><div class="ttname"><a href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa4c659055745cd7036d534f685aeea425">QuestBit::QBIT_FOUNTAIN_IN_CELESTIA_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_CELESTIA_ACTIVATED</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_aab0780fca5f3ce09b3a361f3eec4460aa50c30bc1a8e7d8fd2056c3bced78d6c8"><div class="ttname"><a href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa50c30bc1a8e7d8fd2056c3bced78d6c8">QuestBit::QBIT_FOUNTAIN_IN_HARMONDALE_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_HARMONDALE_ACTIVATED</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_aab0780fca5f3ce09b3a361f3eec4460aa7978ad56e9c15f02e01ea1b1cdf505b4"><div class="ttname"><a href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa7978ad56e9c15f02e01ea1b1cdf505b4">QuestBit::QBIT_FOUNTAIN_IN_MOUNT_NIGHON_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_MOUNT_NIGHON_ACTIVATED</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_aab0780fca5f3ce09b3a361f3eec4460aa7a754c1251ae2e18ecfbeb03219f7ec8"><div class="ttname"><a href="PartyEnums_8h.html#aab0780fca5f3ce09b3a361f3eec4460aa7a754c1251ae2e18ecfbeb03219f7ec8">QuestBit::QBIT_FOUNTAIN_IN_THE_PIT_ACTIVATED</a></div><div class="ttdeci">@ QBIT_FOUNTAIN_IN_THE_PIT_ACTIVATED</div></div>
+<div class="ttc" id="aVec_8h_html_adf6e1d7d066bb09da957cc89f2b3ceb2"><div class="ttname"><a href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a></div><div class="ttdeci">Vec3&lt; int32_t &gt; Vec3i</div><div class="ttdef"><b>Definition:</b> Vec.h:190</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7916db1dc45dc6602475a0077dc7ab3a" name="a7916db1dc45dc6602475a0077dc7ab3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7916db1dc45dc6602475a0077dc7ab3a">&#9670;&#160;</a></span>ui_book_townportal_background</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGraphicsImage.html">GraphicsImage</a>* ui_book_townportal_background = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2c085d4e4721a04c480d8dc0e5c093dd" name="a2c085d4e4721a04c480d8dc0e5c093dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c085d4e4721a04c480d8dc0e5c093dd">&#9670;&#160;</a></span>ui_book_townportal_icons</h2>
+<a id="a46d7784d1e18fa7a544509e9f5983c82" name="a46d7784d1e18fa7a544509e9f5983c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d7784d1e18fa7a544509e9f5983c82">&#9670;&#160;</a></span>ui_book_townportal_icons</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +228,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="classImage.html">Image</a> *, <a class="el" href="TownPortalBook_8h.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; ui_book_townportal_icons</td>
+          <td class="memname">std::array&lt;<a class="el" href="classGraphicsImage.html">GraphicsImage</a> *, <a class="el" href="TownPortalBook_8cpp.html#a51108d2a3063bcf5d46dd45711923414">TOWN_PORTAL_DESTINATION_COUNT</a>&gt; ui_book_townportal_icons</td>
         </tr>
       </table>
   </td>

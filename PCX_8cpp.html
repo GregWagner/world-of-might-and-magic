@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Engine/Graphics/PCX.cpp File Reference</title>
+<title>OpenEnroth: src/Library/Image/PCX.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3072bc1f55ed1280fe4fbe6b21c78379.html">Engine</a></li><li class="navelem"><a class="el" href="dir_32f76bd42096cb3656f6b4adb3ae4055.html">Graphics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f741251061e5c7c7ed48ab45c3348f11.html">Library</a></li><li class="navelem"><a class="el" href="dir_ef65c38198b18e6be671cac679dd25b4.html">Image</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -86,6 +86,7 @@ $(function() {
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &quot;<a class="el" href="Exception_8h.html">Utility/Exception.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -101,17 +102,17 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a96a58e29e8dbf2b5bdeb775cba46556e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="PCX_8cpp.html#a96a58e29e8dbf2b5bdeb775cba46556ea6532ce739c6f36c52c721d2375368bbf">PCX_VERSION_2_5</a> = 0
-, <a class="el" href="PCX_8cpp.html#a96a58e29e8dbf2b5bdeb775cba46556ea1fa13e75f73932a9c92dcca3762b3bd6">PCX_VERSION_NOT_VALID</a> = 1
-, <a class="el" href="PCX_8cpp.html#a96a58e29e8dbf2b5bdeb775cba46556ead5a07e0a0182e98d274a94a1ce2e8de3">PCX_VERSION_2_8_WITH_PALLETE</a> = 2
-, <a class="el" href="PCX_8cpp.html#a96a58e29e8dbf2b5bdeb775cba46556eafe6cf6978ac8dec59f8730e8334ccd5c">PCX_VERSION_2_8_WITHOUT_PALLETE</a> = 3
+<tr class="memitem:a5d76b81b0ad4c19007a781d4edb8181f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="PCX_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa6532ce739c6f36c52c721d2375368bbf">PCX_VERSION_2_5</a> = 0
+, <a class="el" href="PCX_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa1fa13e75f73932a9c92dcca3762b3bd6">PCX_VERSION_NOT_VALID</a> = 1
+, <a class="el" href="PCX_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fad5a07e0a0182e98d274a94a1ce2e8de3">PCX_VERSION_2_8_WITH_PALLETE</a> = 2
+, <a class="el" href="PCX_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fafe6cf6978ac8dec59f8730e8334ccd5c">PCX_VERSION_2_8_WITHOUT_PALLETE</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="PCX_8cpp.html#a96a58e29e8dbf2b5bdeb775cba46556ea28d7683d9e7a2e823fd70e707ff39fda">PCX_VERSION_WINDOWS</a> = 4
-, <a class="el" href="PCX_8cpp.html#a96a58e29e8dbf2b5bdeb775cba46556eaa15c02e52f9319fc8901568839deb44f">PCX_VERSION_3_0</a> = 5
+&#160;&#160;<a class="el" href="PCX_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa28d7683d9e7a2e823fd70e707ff39fda">PCX_VERSION_WINDOWS</a> = 4
+, <a class="el" href="PCX_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181faa15c02e52f9319fc8901568839deb44f">PCX_VERSION_3_0</a> = 5
 <br />
  }</td></tr>
-<tr class="separator:a96a58e29e8dbf2b5bdeb775cba46556e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5d76b81b0ad4c19007a781d4edb8181f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -125,10 +126,10 @@ Functions</h2></td></tr>
 <tr class="separator:a84332e8cfe678afb584536b1ba120146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ca8596e96ab8252cc822005e79d2793"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCX_8cpp.html#a4ca8596e96ab8252cc822005e79d2793">pcx_rle_decode</a> (<a class="el" href="structbstreamer.html">bstreamer</a> *bs, uint8_t *dst, unsigned int bytes_per_scanline, int compressed)</td></tr>
 <tr class="separator:a4ca8596e96ab8252cc822005e79d2793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84be80eac0b4f1f7677a04ccf0f7fa80"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCX_8cpp.html#a84be80eac0b4f1f7677a04ccf0f7fa80">WritePCXHeader</a> (void *pcx_data, int width, int height)</td></tr>
-<tr class="separator:a84be80eac0b4f1f7677a04ccf0f7fa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af682432ae244888229408506e20dacc7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCX_8cpp.html#af682432ae244888229408506e20dacc7">EncodeOneLine</a> (void *pcx_data, void *line, size_t line_size)</td></tr>
-<tr class="separator:af682432ae244888229408506e20dacc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16cb95f8c852f73fff1406f058d6e32"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCX_8cpp.html#ac16cb95f8c852f73fff1406f058d6e32">writePcxHeader</a> (void *pcx_data, int width, int height)</td></tr>
+<tr class="separator:ac16cb95f8c852f73fff1406f058d6e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99876d4a9eadd7ebf71d92840255df07"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCX_8cpp.html#a99876d4a9eadd7ebf71d92840255df07">encodeOneLine</a> (void *pcx_data, void *line, size_t line_size)</td></tr>
+<tr class="separator:a99876d4a9eadd7ebf71d92840255df07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ac7f304b78511b342bef37de230ef6823" name="ac7f304b78511b342bef37de230ef6823"></a>
@@ -146,8 +147,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a96a58e29e8dbf2b5bdeb775cba46556e" name="a96a58e29e8dbf2b5bdeb775cba46556e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96a58e29e8dbf2b5bdeb775cba46556e">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a5d76b81b0ad4c19007a781d4edb8181f" name="a5d76b81b0ad4c19007a781d4edb8181f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d76b81b0ad4c19007a781d4edb8181f">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,12 +159,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a96a58e29e8dbf2b5bdeb775cba46556ea6532ce739c6f36c52c721d2375368bbf" name="a96a58e29e8dbf2b5bdeb775cba46556ea6532ce739c6f36c52c721d2375368bbf"></a>PCX_VERSION_2_5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a96a58e29e8dbf2b5bdeb775cba46556ea1fa13e75f73932a9c92dcca3762b3bd6" name="a96a58e29e8dbf2b5bdeb775cba46556ea1fa13e75f73932a9c92dcca3762b3bd6"></a>PCX_VERSION_NOT_VALID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a96a58e29e8dbf2b5bdeb775cba46556ead5a07e0a0182e98d274a94a1ce2e8de3" name="a96a58e29e8dbf2b5bdeb775cba46556ead5a07e0a0182e98d274a94a1ce2e8de3"></a>PCX_VERSION_2_8_WITH_PALLETE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a96a58e29e8dbf2b5bdeb775cba46556eafe6cf6978ac8dec59f8730e8334ccd5c" name="a96a58e29e8dbf2b5bdeb775cba46556eafe6cf6978ac8dec59f8730e8334ccd5c"></a>PCX_VERSION_2_8_WITHOUT_PALLETE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a96a58e29e8dbf2b5bdeb775cba46556ea28d7683d9e7a2e823fd70e707ff39fda" name="a96a58e29e8dbf2b5bdeb775cba46556ea28d7683d9e7a2e823fd70e707ff39fda"></a>PCX_VERSION_WINDOWS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a96a58e29e8dbf2b5bdeb775cba46556eaa15c02e52f9319fc8901568839deb44f" name="a96a58e29e8dbf2b5bdeb775cba46556eaa15c02e52f9319fc8901568839deb44f"></a>PCX_VERSION_3_0&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181fa6532ce739c6f36c52c721d2375368bbf" name="a5d76b81b0ad4c19007a781d4edb8181fa6532ce739c6f36c52c721d2375368bbf"></a>PCX_VERSION_2_5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181fa1fa13e75f73932a9c92dcca3762b3bd6" name="a5d76b81b0ad4c19007a781d4edb8181fa1fa13e75f73932a9c92dcca3762b3bd6"></a>PCX_VERSION_NOT_VALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181fad5a07e0a0182e98d274a94a1ce2e8de3" name="a5d76b81b0ad4c19007a781d4edb8181fad5a07e0a0182e98d274a94a1ce2e8de3"></a>PCX_VERSION_2_8_WITH_PALLETE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181fafe6cf6978ac8dec59f8730e8334ccd5c" name="a5d76b81b0ad4c19007a781d4edb8181fafe6cf6978ac8dec59f8730e8334ccd5c"></a>PCX_VERSION_2_8_WITHOUT_PALLETE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181fa28d7683d9e7a2e823fd70e707ff39fda" name="a5d76b81b0ad4c19007a781d4edb8181fa28d7683d9e7a2e823fd70e707ff39fda"></a>PCX_VERSION_WINDOWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d76b81b0ad4c19007a781d4edb8181faa15c02e52f9319fc8901568839deb44f" name="a5d76b81b0ad4c19007a781d4edb8181faa15c02e52f9319fc8901568839deb44f"></a>PCX_VERSION_3_0&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -305,14 +306,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af682432ae244888229408506e20dacc7" name="af682432ae244888229408506e20dacc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af682432ae244888229408506e20dacc7">&#9670;&#160;</a></span>EncodeOneLine()</h2>
+<a id="a99876d4a9eadd7ebf71d92840255df07" name="a99876d4a9eadd7ebf71d92840255df07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99876d4a9eadd7ebf71d92840255df07">&#9670;&#160;</a></span>encodeOneLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void * EncodeOneLine </td>
+          <td class="memname">void * encodeOneLine </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>pcx_data</em>, </td>
@@ -387,14 +388,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a84be80eac0b4f1f7677a04ccf0f7fa80" name="a84be80eac0b4f1f7677a04ccf0f7fa80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84be80eac0b4f1f7677a04ccf0f7fa80">&#9670;&#160;</a></span>WritePCXHeader()</h2>
+<a id="ac16cb95f8c852f73fff1406f058d6e32" name="ac16cb95f8c852f73fff1406f058d6e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac16cb95f8c852f73fff1406f058d6e32">&#9670;&#160;</a></span>writePcxHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void * WritePCXHeader </td>
+          <td class="memname">void * writePcxHeader </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>pcx_data</em>, </td>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -83,21 +83,17 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5513dcd6784a94219e883284450465d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActiveOverlayList.html#a5513dcd6784a94219e883284450465d6">Reset</a> ()</td></tr>
 <tr class="separator:a5513dcd6784a94219e883284450465d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb46cae6a88a10a6103d5b046c3ffd59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActiveOverlayList.html#abb46cae6a88a10a6103d5b046c3ffd59">_4418B6</a> (int uOverlayID, int16_t pid, int animLength, int fpDamageMod, int16_t projSize)</td></tr>
-<tr class="separator:abb46cae6a88a10a6103d5b046c3ffd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70f211fa2e5fd151c2c024a4e732b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActiveOverlayList.html#ab70f211fa2e5fd151c2c024a4e732b85">DrawTurnBasedIcon</a> ()</td></tr>
-<tr class="separator:ab70f211fa2e5fd151c2c024a4e732b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79f4b060e24763f3f74adfb0100477f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActiveOverlayList.html#ab79f4b060e24763f3f74adfb0100477f">_4418B6</a> (int uOverlayID, <a class="el" href="classPid.html">Pid</a> pid, <a class="el" href="classDuration.html">Duration</a> animLength, int fpDamageMod, int16_t projSize)</td></tr>
+<tr class="separator:ab79f4b060e24763f3f74adfb0100477f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0e208be915320b26daa214693fc147b2"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structActiveOverlay.html">ActiveOverlay</a>, 50 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActiveOverlayList.html#a0e208be915320b26daa214693fc147b2">pOverlays</a></td></tr>
 <tr class="separator:a0e208be915320b26daa214693fc147b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67861ef645fb287538e27e13a887cb82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActiveOverlayList.html#a67861ef645fb287538e27e13a887cb82">field_3E8</a> = 0</td></tr>
-<tr class="separator:a67861ef645fb287538e27e13a887cb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abb46cae6a88a10a6103d5b046c3ffd59" name="abb46cae6a88a10a6103d5b046c3ffd59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb46cae6a88a10a6103d5b046c3ffd59">&#9670;&#160;</a></span>_4418B6()</h2>
+<a id="ab79f4b060e24763f3f74adfb0100477f" name="ab79f4b060e24763f3f74adfb0100477f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79f4b060e24763f3f74adfb0100477f">&#9670;&#160;</a></span>_4418B6()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,13 +107,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classPid.html">Pid</a>&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classDuration.html">Duration</a>&#160;</td>
           <td class="paramname"><em>animLength</em>, </td>
         </tr>
         <tr>
@@ -142,23 +138,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab70f211fa2e5fd151c2c024a4e732b85" name="ab70f211fa2e5fd151c2c024a4e732b85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab70f211fa2e5fd151c2c024a4e732b85">&#9670;&#160;</a></span>DrawTurnBasedIcon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ActiveOverlayList::DrawTurnBasedIcon </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5513dcd6784a94219e883284450465d6" name="a5513dcd6784a94219e883284450465d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5513dcd6784a94219e883284450465d6">&#9670;&#160;</a></span>Reset()</h2>
 
@@ -177,20 +156,6 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a67861ef645fb287538e27e13a887cb82" name="a67861ef645fb287538e27e13a887cb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67861ef645fb287538e27e13a887cb82">&#9670;&#160;</a></span>field_3E8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ActiveOverlayList::field_3E8 = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0e208be915320b26daa214693fc147b2" name="a0e208be915320b26daa214693fc147b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e208be915320b26daa214693fc147b2">&#9670;&#160;</a></span>pOverlays</h2>
 

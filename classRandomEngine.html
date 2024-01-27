@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,8 @@ Inheritance diagram for RandomEngine:</div>
   <img src="classRandomEngine.png" usemap="#RandomEngine_map" alt=""/>
   <map id="RandomEngine_map" name="RandomEngine_map">
 <area href="classMersenneTwisterRandomEngine.html" alt="MersenneTwisterRandomEngine" shape="rect" coords="0,56,193,80"/>
-<area href="classNonRandomEngine.html" alt="NonRandomEngine" shape="rect" coords="203,56,396,80"/>
+<area href="classSequentialRandomEngine.html" alt="SequentialRandomEngine" shape="rect" coords="203,56,396,80"/>
+<area href="classTracingRandomEngine.html" alt="TracingRandomEngine" shape="rect" coords="406,56,599,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -175,7 +176,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Random number that the next call to <code>random(hi)</code> will return. </dd></dl>
 
-<p>Implemented in <a class="el" href="classMersenneTwisterRandomEngine.html#a17b4f21486d3814bf16f97f4319644df">MersenneTwisterRandomEngine</a>, and <a class="el" href="classNonRandomEngine.html#a5db7749bba16e948c4e56da8638f5d08">NonRandomEngine</a>.</p>
+<p>Implemented in <a class="el" href="classTracingRandomEngine.html#a956d4e9d83fd82e85d60ac2edc522095">TracingRandomEngine</a>, <a class="el" href="classMersenneTwisterRandomEngine.html#a17b4f21486d3814bf16f97f4319644df">MersenneTwisterRandomEngine</a>, and <a class="el" href="classSequentialRandomEngine.html#a7967e9ee43df385542557a22eeaa305e">SequentialRandomEngine</a>.</p>
 
 </div>
 </div>
@@ -210,7 +211,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Random number in range <code>[0, hi)</code>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classMersenneTwisterRandomEngine.html#a7da79864e8540dfe737f6d51e285fa38">MersenneTwisterRandomEngine</a>, and <a class="el" href="classNonRandomEngine.html#a95b07498efbb9db3416fcb272ef00c25">NonRandomEngine</a>.</p>
+<p>Implemented in <a class="el" href="classTracingRandomEngine.html#a976138bc005b5e3508dbadbd3cacb18d">TracingRandomEngine</a>, <a class="el" href="classMersenneTwisterRandomEngine.html#a7da79864e8540dfe737f6d51e285fa38">MersenneTwisterRandomEngine</a>, and <a class="el" href="classSequentialRandomEngine.html#ac16a1cc8cf5ecebd17c620f7ca380727">SequentialRandomEngine</a>.</p>
 
 </div>
 </div>
@@ -301,7 +302,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Random floating point number in range <code>[0, 1)</code>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classMersenneTwisterRandomEngine.html#a9fd6428f5d5911423a4c3c6212ddf677">MersenneTwisterRandomEngine</a>, and <a class="el" href="classNonRandomEngine.html#a33862021fdd3f29b7e9dd3d938b1205f">NonRandomEngine</a>.</p>
+<p>Implemented in <a class="el" href="classTracingRandomEngine.html#ae6d2d83d1b7c1a9ab4e8ebdb6373d495">TracingRandomEngine</a>, <a class="el" href="classMersenneTwisterRandomEngine.html#a9fd6428f5d5911423a4c3c6212ddf677">MersenneTwisterRandomEngine</a>, and <a class="el" href="classSequentialRandomEngine.html#a9ce2ef1852ba44ef46ab57ee0d4060c1">SequentialRandomEngine</a>.</p>
 
 </div>
 </div>
@@ -427,7 +428,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Reinitializes this random engine with the provided seed value.</p>
+<p >Reinitializes this random engine with the provided seed value. Passing <code>0</code> should be equivalent to calling an in-place destructor and then reconstructing the object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">seed</td><td>Random seed. </td></tr>
@@ -435,7 +436,7 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classMersenneTwisterRandomEngine.html#a652eb0b97faec2c4d976d1b159567bb8">MersenneTwisterRandomEngine</a>, and <a class="el" href="classNonRandomEngine.html#a170afad0fc772644feab2bf73187be28">NonRandomEngine</a>.</p>
+<p>Implemented in <a class="el" href="classTracingRandomEngine.html#ab990ec78d860ee9fe4cb81ea4b5222af">TracingRandomEngine</a>, <a class="el" href="classMersenneTwisterRandomEngine.html#a652eb0b97faec2c4d976d1b159567bb8">MersenneTwisterRandomEngine</a>, and <a class="el" href="classSequentialRandomEngine.html#a346974b4fda40c09b7fbe0c16a3f0749">SequentialRandomEngine</a>.</p>
 
 </div>
 </div>

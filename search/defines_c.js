@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['nuklear_5fmax_5felement_5fmemory_0',['NUKLEAR_MAX_ELEMENT_MEMORY',['../Nuklear_8h.html#a7921fe5aa4eea6dc18d70a63c5ef7644',1,'Nuklear.h']]],
-  ['nuklear_5fmax_5fvertex_5fmemory_1',['NUKLEAR_MAX_VERTEX_MEMORY',['../Nuklear_8h.html#ab055c92f5fb816790b03b45124adfe6a',1,'Nuklear.h']]]
+  ['skill_5fto_5flearning_5fdialogue_5fid_0',['SKILL_TO_LEARNING_DIALOGUE_ID',['../GUIDialogues_8h.html#a0e0a2fa14fb92490ed6695b55d7e55ef',1,'GUIDialogues.h']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -80,20 +80,10 @@ $(function() {
   <div class="headertitle"><div class="title">KeyboardActionMapping.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="KeyboardActionMapping_8h.html">Io/KeyboardActionMapping.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Vis_8h.html">Engine/Graphics/Vis.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="KeyboardActionMapping_8h.html">KeyboardActionMapping.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="Weather_8h.html">Engine/Graphics/Weather.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CastSpellInfo_8h.html">Engine/Spells/CastSpellInfo.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -107,8 +97,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5f4b704cc965e348516b244360d39cdc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structIo_1_1KeyboardActionMapping.html">KeyboardActionMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KeyboardActionMapping_8cpp.html#a5f4b704cc965e348516b244360d39cdc">keyboardActionMapping</a> = nullptr</td></tr>
-<tr class="separator:a5f4b704cc965e348516b244360d39cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5f3d87c27c73e2a58d4da1d1848301"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIo_1_1KeyboardActionMapping.html">Io::KeyboardActionMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KeyboardActionMapping_8cpp.html#adc5f3d87c27c73e2a58d4da1d1848301">keyboardActionMapping</a> = nullptr</td></tr>
+<tr class="separator:adc5f3d87c27c73e2a58d4da1d1848301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac779193a7bd296fbdcabc8799a780aa0"><td class="memItemLeft" align="right" valign="top">std::map&lt; InputAction, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KeyboardActionMapping_8cpp.html#ac779193a7bd296fbdcabc8799a780aa0">key_map_conflicted</a></td></tr>
 <tr class="separator:ac779193a7bd296fbdcabc8799a780aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492680900722e89bbe10e67c802ee43e"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classCKeyListElement.html">CKeyListElement</a>, <a class="el" href="namespacestd.html#a3a31c7a5a45f5c168f309a3066d4d6ae">std::to_underlying</a>(InputAction::Count)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KeyboardActionMapping_8cpp.html#a492680900722e89bbe10e67c802ee43e">keyMappingParams</a></td></tr>
@@ -156,14 +146,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5f4b704cc965e348516b244360d39cdc" name="a5f4b704cc965e348516b244360d39cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f4b704cc965e348516b244360d39cdc">&#9670;&#160;</a></span>keyboardActionMapping</h2>
+<a id="adc5f3d87c27c73e2a58d4da1d1848301" name="adc5f3d87c27c73e2a58d4da1d1848301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5f3d87c27c73e2a58d4da1d1848301">&#9670;&#160;</a></span>keyboardActionMapping</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="structIo_1_1KeyboardActionMapping.html">KeyboardActionMapping</a>&gt; keyboardActionMapping = nullptr</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classIo_1_1KeyboardActionMapping.html">Io::KeyboardActionMapping</a>&gt; keyboardActionMapping = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

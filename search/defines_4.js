@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['day_5fattrib_5ffog_0',['DAY_ATTRIB_FOG',['../LocationEnums_8h.html#a8f7e5851c250151ad4eaca18a88e1d86',1,'LocationEnums.h']]],
-  ['deck_5fsize_1',['DECK_SIZE',['../Arcomage_8h.html#ab48a679225d82ec51e09e62d14313b34',1,'Arcomage.h']]]
+  ['evt_5fbyte_0',['EVT_BYTE',['../RawEvent_8h.html#a8c11d317123d267c224a2fc5a57c5798',1,'RawEvent.h']]],
+  ['evt_5fdword_1',['EVT_DWORD',['../RawEvent_8h.html#a390f9b4c34a610cfd06747da12d7d561',1,'RawEvent.h']]],
+  ['evt_5fword_2',['EVT_WORD',['../RawEvent_8h.html#a63c454adee74e03a629439073f9e252f',1,'RawEvent.h']]]
 ];

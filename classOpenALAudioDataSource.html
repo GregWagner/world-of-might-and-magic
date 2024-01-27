@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -76,6 +76,8 @@ $(function() {
   <div class="headertitle"><div class="title">OpenALAudioDataSource Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;OpenALAudioDataSource.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OpenALAudioDataSource:</div>
 <div class="dyncontent">
@@ -88,7 +90,7 @@ Inheritance diagram for OpenALAudioDataSource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afdbd37e5de4ea9067a12d86e1dbaa58b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#afdbd37e5de4ea9067a12d86e1dbaa58b">OpenALAudioDataSource</a> (<a class="el" href="Media_8h.html#aa9016c9de6c0ff9dbc6e13d443ec452b">PAudioDataSource</a> baseDataSource)</td></tr>
+<tr class="memitem:afdbd37e5de4ea9067a12d86e1dbaa58b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#afdbd37e5de4ea9067a12d86e1dbaa58b">OpenALAudioDataSource</a> (<a class="el" href="AudioDataSource_8h.html#a4986454aae254076ad2f53d528dde29d">PAudioDataSource</a> baseDataSource)</td></tr>
 <tr class="separator:afdbd37e5de4ea9067a12d86e1dbaa58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83156e20e15c10029dafc82d39511adc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#a83156e20e15c10029dafc82d39511adc">~OpenALAudioDataSource</a> () override</td></tr>
 <tr class="separator:a83156e20e15c10029dafc82d39511adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a75e68bce9421af4c5499a689763ced86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49da65ec09bf0cf5f2c7df64c92f8e1c"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classBlob.html">Blob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#a49da65ec09bf0cf5f2c7df64c92f8e1c">GetNextBuffer</a> () override</td></tr>
 <tr class="separator:a49da65ec09bf0cf5f2c7df64c92f8e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6145b008a14b8980e2b164acb587548"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#ac6145b008a14b8980e2b164acb587548">GetDuration</a> () override</td></tr>
+<tr class="separator:ac6145b008a14b8980e2b164acb587548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec42d6b7f06e971d4537df15a4dd18f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#aec42d6b7f06e971d4537df15a4dd18f5">linkSource</a> (ALuint al_source)</td></tr>
 <tr class="separator:aec42d6b7f06e971d4537df15a4dd18f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIAudioDataSource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIAudioDataSource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIAudioDataSource.html">IAudioDataSource</a></td></tr>
@@ -119,10 +123,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5680714e900e8ee861c9a4bd10313c40 inherit pub_methods_classIAudioDataSource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b23193597469e20991d50b19195fcfa inherit pub_methods_classIAudioDataSource"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classBlob.html">Blob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIAudioDataSource.html#a7b23193597469e20991d50b19195fcfa">GetNextBuffer</a> ()=0</td></tr>
 <tr class="separator:a7b23193597469e20991d50b19195fcfa inherit pub_methods_classIAudioDataSource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57683cb88aef18026ae06959bb99ef35 inherit pub_methods_classIAudioDataSource"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIAudioDataSource.html#a57683cb88aef18026ae06959bb99ef35">GetDuration</a> ()=0</td></tr>
+<tr class="separator:a57683cb88aef18026ae06959bb99ef35 inherit pub_methods_classIAudioDataSource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad1b24120bccd2cc11d45b0772e9d34c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Media_8h.html#aa9016c9de6c0ff9dbc6e13d443ec452b">PAudioDataSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#ad1b24120bccd2cc11d45b0772e9d34c3">_baseDataSource</a></td></tr>
+<tr class="memitem:ad1b24120bccd2cc11d45b0772e9d34c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="AudioDataSource_8h.html#a4986454aae254076ad2f53d528dde29d">PAudioDataSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#ad1b24120bccd2cc11d45b0772e9d34c3">_baseDataSource</a></td></tr>
 <tr class="separator:ad1b24120bccd2cc11d45b0772e9d34c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4447cac903cb87381258b9b6c04fb24e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ALuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenALAudioDataSource.html#a4447cac903cb87381258b9b6c04fb24e">_buffers</a></td></tr>
 <tr class="separator:a4447cac903cb87381258b9b6c04fb24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +146,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">OpenALAudioDataSource::OpenALAudioDataSource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="Media_8h.html#aa9016c9de6c0ff9dbc6e13d443ec452b">PAudioDataSource</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="AudioDataSource_8h.html#a4986454aae254076ad2f53d528dde29d">PAudioDataSource</a>&#160;</td>
           <td class="paramname"><em>baseDataSource</em></td><td>)</td>
           <td></td>
         </tr>
@@ -231,6 +237,33 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classIAudioDataSource.html#a5680714e900e8ee861c9a4bd10313c40">IAudioDataSource</a>.</p>
+
+</div>
+</div>
+<a id="ac6145b008a14b8980e2b164acb587548" name="ac6145b008a14b8980e2b164acb587548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6145b008a14b8980e2b164acb587548">&#9670;&#160;</a></span>GetDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float OpenALAudioDataSource::GetDuration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIAudioDataSource.html#a57683cb88aef18026ae06959bb99ef35">IAudioDataSource</a>.</p>
 
 </div>
 </div>
@@ -344,7 +377,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Media_8h.html#aa9016c9de6c0ff9dbc6e13d443ec452b">PAudioDataSource</a> OpenALAudioDataSource::_baseDataSource</td>
+          <td class="memname"><a class="el" href="AudioDataSource_8h.html#a4986454aae254076ad2f53d528dde29d">PAudioDataSource</a> OpenALAudioDataSource::_baseDataSource</td>
         </tr>
       </table>
   </td>
@@ -378,8 +411,9 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/Media/Audio/<a class="el" href="OpenALSoundProvider_8cpp.html">OpenALSoundProvider.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/Media/Audio/<a class="el" href="OpenALAudioDataSource_8h.html">OpenALAudioDataSource.h</a></li>
+<li>src/Media/Audio/<a class="el" href="OpenALAudioDataSource_8cpp.html">OpenALAudioDataSource.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

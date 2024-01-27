@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;03c34e3</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f674f89</span>
    </div>
   </td>
  </tr>
@@ -81,81 +81,25 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a42b676e673a85355c81e2ef90cf8f8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonsterList.html#a6a42b676e673a85355c81e2ef90cf8f8">GetMonsterIDByName</a> (const char *pMonsterName)</td></tr>
-<tr class="separator:a6a42b676e673a85355c81e2ef90cf8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80243179c1b6b646e84cc7af21f75c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonsterList.html#a80243179c1b6b646e84cc7af21f75c9f">FromFile</a> (const <a class="el" href="classBlob.html">Blob</a> &amp;data_mm6, const <a class="el" href="classBlob.html">Blob</a> &amp;data_mm7, const <a class="el" href="classBlob.html">Blob</a> &amp;data_mm8)</td></tr>
-<tr class="separator:a80243179c1b6b646e84cc7af21f75c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6026659e6a432c28622b32affab06ba9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonsterList.html#a6026659e6a432c28622b32affab06ba9">FromFileTxt</a> (const char *Args)</td></tr>
-<tr class="separator:a6026659e6a432c28622b32affab06ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14669b067f1b9c3b87d8ab77985a43e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonsterList.html#a14669b067f1b9c3b87d8ab77985a43e5">GetMonsterIDByName</a> (const std::string &amp;pMonsterName)</td></tr>
+<tr class="separator:a14669b067f1b9c3b87d8ab77985a43e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a59bb3e0d7f737adc380b21b87fed5e3c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structMonsterDesc.html">MonsterDesc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonsterList.html#a59bb3e0d7f737adc380b21b87fed5e3c">pMonsters</a></td></tr>
-<tr class="separator:a59bb3e0d7f737adc380b21b87fed5e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2dedddf23f85c0359a00b81a19d5ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="structMonsterDesc.html">MonsterDesc</a>, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa4cc005ed16ad55cc304dd275a5a18329">MONSTER_FIRST</a>, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaeba066196d7b381b8bb621e13b91b58c">MONSTER_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonsterList.html#ae2dedddf23f85c0359a00b81a19d5ccf">monsters</a></td></tr>
+<tr class="separator:ae2dedddf23f85c0359a00b81a19d5ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a80243179c1b6b646e84cc7af21f75c9f" name="a80243179c1b6b646e84cc7af21f75c9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80243179c1b6b646e84cc7af21f75c9f">&#9670;&#160;</a></span>FromFile()</h2>
+<a id="a14669b067f1b9c3b87d8ab77985a43e5" name="a14669b067f1b9c3b87d8ab77985a43e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14669b067f1b9c3b87d8ab77985a43e5">&#9670;&#160;</a></span>GetMonsterIDByName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MonsterList::FromFile </td>
+          <td class="memname"><a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> MonsterList::GetMonsterIDByName </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classBlob.html">Blob</a> &amp;&#160;</td>
-          <td class="paramname"><em>data_mm6</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classBlob.html">Blob</a> &amp;&#160;</td>
-          <td class="paramname"><em>data_mm7</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classBlob.html">Blob</a> &amp;&#160;</td>
-          <td class="paramname"><em>data_mm8</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6026659e6a432c28622b32affab06ba9" name="a6026659e6a432c28622b32affab06ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6026659e6a432c28622b32affab06ba9">&#9670;&#160;</a></span>FromFileTxt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MonsterList::FromFileTxt </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>Args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a42b676e673a85355c81e2ef90cf8f8" name="a6a42b676e673a85355c81e2ef90cf8f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a42b676e673a85355c81e2ef90cf8f8">&#9670;&#160;</a></span>GetMonsterIDByName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t MonsterList::GetMonsterIDByName </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>pMonsterName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -165,14 +109,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a59bb3e0d7f737adc380b21b87fed5e3c" name="a59bb3e0d7f737adc380b21b87fed5e3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59bb3e0d7f737adc380b21b87fed5e3c">&#9670;&#160;</a></span>pMonsters</h2>
+<a id="ae2dedddf23f85c0359a00b81a19d5ccf" name="ae2dedddf23f85c0359a00b81a19d5ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2dedddf23f85c0359a00b81a19d5ccf">&#9670;&#160;</a></span>monsters</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structMonsterDesc.html">MonsterDesc</a>&gt; MonsterList::pMonsters</td>
+          <td class="memname"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;<a class="el" href="structMonsterDesc.html">MonsterDesc</a>, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa4cc005ed16ad55cc304dd275a5a18329">MONSTER_FIRST</a>, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaeba066196d7b381b8bb621e13b91b58c">MONSTER_LAST</a>&gt; MonsterList::monsters</td>
         </tr>
       </table>
 </div><div class="memdoc">
