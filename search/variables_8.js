@@ -46,7 +46,7 @@ var searchData=
   ['housemoviey2_43',['HouseMovieY2',['../classGameConfig_1_1Graphics.html#a41e5f08c77170e081b2d4b0bba7c1eb0',1,'GameConfig::Graphics']]],
   ['housenpcs_44',['houseNpcs',['../UIHouses_8cpp.html#ab315df385cac435b083f113ce91eb9a4',1,'houseNpcs():&#160;UIHouses.cpp'],['../UIHouses_8h.html#ab315df385cac435b083f113ce91eb9a4',1,'houseNpcs():&#160;UIHouses.cpp']]],
   ['hp_45',['hp',['../structEventTraceCharacterState.html#a68ab5cf393941594687d0631271a7b30',1,'EventTraceCharacterState::hp()'],['../structMonsterInfo__MM7.html#ac83622127aa9596cd33b136d3999a30e',1,'MonsterInfo_MM7::hp()'],['../structMonsterInfo.html#a4f7c43c31ae0032b029f81d24b1f20e0',1,'MonsterInfo::hp()']]],
-  ['hp_5fdescription_46',['hp_description',['../classLocalization.html#a34e2afa01689e666a3ba8b5a7e11cf2f',1,'Localization']]],
+  ['hp_5fdescription_46',['hp_description',['../classLocalization.html#a335e242feef3e3394d4a71ad5cb299ad',1,'Localization']]],
   ['hres_47',['hres',['../structPCXHeader.html#a182817b2b03ff8e33f15b0122c859a19',1,'PCXHeader']]],
   ['hw_5fsprites_48',['hw_sprites',['../classSpriteFrame.html#a97ed373b263df04fcad7c933c104dfeb',1,'SpriteFrame']]],
   ['hwsprite_49',['hwsprite',['../structRenderBillboard.html#a0a19983757101fd9c21b5859f972b901',1,'RenderBillboard']]],

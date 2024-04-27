@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;46d013e</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;32a3a06</span>
    </div>
   </td>
  </tr>
@@ -85,7 +85,7 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structILess.html">ILess</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNoCaseLess.html">NoCaseLess</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -96,22 +96,18 @@ Functions</h2></td></tr>
 <tr class="separator:a63f49adbb1a07fd289440db94b3de066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26543b6f1052f150560045f6a091e4fe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a26543b6f1052f150560045f6a091e4fe">tokenize</a> (char *input, const char separator)</td></tr>
 <tr class="separator:a26543b6f1052f150560045f6a091e4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e6142eae5662acb65bb68719b5dbb61"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a7e6142eae5662acb65bb68719b5dbb61">removeQuotes</a> (char *str)</td></tr>
-<tr class="separator:a7e6142eae5662acb65bb68719b5dbb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b8814bc1a5652c82d128b1566ba3c9"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a32b8814bc1a5652c82d128b1566ba3c9">removeQuotes</a> (std::string_view str)</td></tr>
+<tr class="separator:a32b8814bc1a5652c82d128b1566ba3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6594f254aa6d2ca44371a419dc9297d7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a6594f254aa6d2ca44371a419dc9297d7">trimRemoveQuotes</a> (std::string str)</td></tr>
 <tr class="separator:a6594f254aa6d2ca44371a419dc9297d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db9ab35b35a37e25a506b09b6054a8d"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a2db9ab35b35a37e25a506b09b6054a8d">trim</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>)</td></tr>
 <tr class="separator:a2db9ab35b35a37e25a506b09b6054a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7114f4bca729c301080d0b13cfac67ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a7114f4bca729c301080d0b13cfac67ba">istarts_with</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, std::string_view prefix)</td></tr>
-<tr class="separator:a7114f4bca729c301080d0b13cfac67ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a768df8f28e24918de40a4d331455b22c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a768df8f28e24918de40a4d331455b22c">iequals</a> (std::string_view a, std::string_view b)</td></tr>
-<tr class="separator:a768df8f28e24918de40a4d331455b22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4031a348e63cf678f364d5e79c63ded8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a4031a348e63cf678f364d5e79c63ded8">iless</a> (std::string_view a, std::string_view b)</td></tr>
-<tr class="separator:a4031a348e63cf678f364d5e79c63ded8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f9d81b501ac9b4a827da9844e470524"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a8f9d81b501ac9b4a827da9844e470524">iequalsAscii</a> (std::u8string_view a, std::u8string_view b)</td></tr>
-<tr class="separator:a8f9d81b501ac9b4a827da9844e470524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97c0d39944acb26a50e765cd746e74c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#ae97c0d39944acb26a50e765cd746e74c">ilessAscii</a> (std::u8string_view a, std::u8string_view b)</td></tr>
-<tr class="separator:ae97c0d39944acb26a50e765cd746e74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d0b2f11909a0ef4a5d78e8119ea3c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a02d0b2f11909a0ef4a5d78e8119ea3c1">noCaseStartsWith</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, std::string_view prefix)</td></tr>
+<tr class="separator:a02d0b2f11909a0ef4a5d78e8119ea3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ac39797f604e33b259fc8e512a4fb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#ae7ac39797f604e33b259fc8e512a4fb9">noCaseEquals</a> (std::string_view a, std::string_view b)</td></tr>
+<tr class="separator:ae7ac39797f604e33b259fc8e512a4fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6b9aa50a49900596d706eb0d4f5f6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#abd6b9aa50a49900596d706eb0d4f5f6c">noCaseLess</a> (std::string_view a, std::string_view b)</td></tr>
+<tr class="separator:abd6b9aa50a49900596d706eb0d4f5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352634eced7efa884c0616f9ddb1c13e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a352634eced7efa884c0616f9ddb1c13e">toPrintable</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, char placeholder=' ')</td></tr>
 <tr class="separator:a352634eced7efa884c0616f9ddb1c13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b9c38d4b6e7b1de0adc8219f65fff37"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a2b9c38d4b6e7b1de0adc8219f65fff37">toHexDump</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, size_t groupSize=0)</td></tr>
@@ -122,18 +118,20 @@ Functions</h2></td></tr>
 <tr class="separator:a0bd67f930de8d6d5e6746a458ba69a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7adfd80cc796bd24c3b7db0791d9e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a0b7adfd80cc796bd24c3b7db0791d9e6">splitString</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, char sep)</td></tr>
 <tr class="separator:a0b7adfd80cc796bd24c3b7db0791d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a1feab518664815aee47b665274976"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#ae3a1feab518664815aee47b665274976">splitString</a> (const char *<a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, char sep)</td></tr>
+<tr class="separator:ae3a1feab518664815aee47b665274976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a987a019dfd128c47656a03075875c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="String_8h.html#a95a987a019dfd128c47656a03075875c">splitString</a> (std::string &amp;&amp;<a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>, char sep)=delete</td></tr>
 <tr class="separator:a95a987a019dfd128c47656a03075875c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a768df8f28e24918de40a4d331455b22c" name="a768df8f28e24918de40a4d331455b22c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a768df8f28e24918de40a4d331455b22c">&#9670;&#160;</a></span>iequals()</h2>
+<a id="ae7ac39797f604e33b259fc8e512a4fb9" name="ae7ac39797f604e33b259fc8e512a4fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ac39797f604e33b259fc8e512a4fb9">&#9670;&#160;</a></span>noCaseEquals()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool iequals </td>
+          <td class="memname">bool noCaseEquals </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -154,42 +152,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f9d81b501ac9b4a827da9844e470524" name="a8f9d81b501ac9b4a827da9844e470524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f9d81b501ac9b4a827da9844e470524">&#9670;&#160;</a></span>iequalsAscii()</h2>
+<a id="abd6b9aa50a49900596d706eb0d4f5f6c" name="abd6b9aa50a49900596d706eb0d4f5f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd6b9aa50a49900596d706eb0d4f5f6c">&#9670;&#160;</a></span>noCaseLess()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool iequalsAscii </td>
-          <td>(</td>
-          <td class="paramtype">std::u8string_view&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::u8string_view&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4031a348e63cf678f364d5e79c63ded8" name="a4031a348e63cf678f364d5e79c63ded8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4031a348e63cf678f364d5e79c63ded8">&#9670;&#160;</a></span>iless()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool iless </td>
+          <td class="memname">bool noCaseLess </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -210,42 +180,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae97c0d39944acb26a50e765cd746e74c" name="ae97c0d39944acb26a50e765cd746e74c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae97c0d39944acb26a50e765cd746e74c">&#9670;&#160;</a></span>ilessAscii()</h2>
+<a id="a02d0b2f11909a0ef4a5d78e8119ea3c1" name="a02d0b2f11909a0ef4a5d78e8119ea3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d0b2f11909a0ef4a5d78e8119ea3c1">&#9670;&#160;</a></span>noCaseStartsWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ilessAscii </td>
-          <td>(</td>
-          <td class="paramtype">std::u8string_view&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::u8string_view&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7114f4bca729c301080d0b13cfac67ba" name="a7114f4bca729c301080d0b13cfac67ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7114f4bca729c301080d0b13cfac67ba">&#9670;&#160;</a></span>istarts_with()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool istarts_with </td>
+          <td class="memname">bool noCaseStartsWith </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>s</em>, </td>
@@ -266,8 +208,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e6142eae5662acb65bb68719b5dbb61" name="a7e6142eae5662acb65bb68719b5dbb61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e6142eae5662acb65bb68719b5dbb61">&#9670;&#160;</a></span>removeQuotes()</h2>
+<a id="a32b8814bc1a5652c82d128b1566ba3c9" name="a32b8814bc1a5652c82d128b1566ba3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b8814bc1a5652c82d128b1566ba3c9">&#9670;&#160;</a></span>removeQuotes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,9 +218,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char * removeQuotes </td>
+          <td class="memname">std::string_view removeQuotes </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
@@ -289,6 +231,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>String to unquote. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String with leading &amp; trailing double quotes removed, if any. </dd></dl>
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x00452C30 </dd></dl>
 
 </div>
 </div>
@@ -326,8 +276,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae3a1feab518664815aee47b665274976" name="ae3a1feab518664815aee47b665274976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a1feab518664815aee47b665274976">&#9670;&#160;</a></span>splitString() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string_view &gt; splitString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a95a987a019dfd128c47656a03075875c" name="a95a987a019dfd128c47656a03075875c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95a987a019dfd128c47656a03075875c">&#9670;&#160;</a></span>splitString() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a987a019dfd128c47656a03075875c">&#9670;&#160;</a></span>splitString() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +349,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b7adfd80cc796bd24c3b7db0791d9e6" name="a0b7adfd80cc796bd24c3b7db0791d9e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b7adfd80cc796bd24c3b7db0791d9e6">&#9670;&#160;</a></span>splitString() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7adfd80cc796bd24c3b7db0791d9e6">&#9670;&#160;</a></span>splitString() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +385,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0bd67f930de8d6d5e6746a458ba69a0d" name="a0bd67f930de8d6d5e6746a458ba69a0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bd67f930de8d6d5e6746a458ba69a0d">&#9670;&#160;</a></span>splitString() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd67f930de8d6d5e6746a458ba69a0d">&#9670;&#160;</a></span>splitString() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
