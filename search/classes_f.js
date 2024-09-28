@@ -1,12 +1,12 @@
 var searchData=
 [
   ['randomengine_0',['RandomEngine',['../classRandomEngine.html',1,'']]],
-  ['randomengineptr_1',['RandomEnginePtr',['../classdetail_1_1RandomEnginePtr.html',1,'detail']]],
-  ['rangeiterator_2',['RangeIterator',['../classdetail_1_1RangeIterator.html',1,'detail']]],
-  ['rawcharacterconditions_3',['RawCharacterConditions',['../structRawCharacterConditions.html',1,'']]],
-  ['rawevent_4',['RawEvent',['../structRawEvent.html',1,'']]],
-  ['rawsoundlist_5',['RawSoundList',['../structRawSoundList.html',1,'']]],
-  ['rawtimer_6',['RawTimer',['../structRawTimer.html',1,'']]],
+  ['rangeiterator_1',['RangeIterator',['../classdetail_1_1RangeIterator.html',1,'detail']]],
+  ['rawcharacterconditions_2',['RawCharacterConditions',['../structRawCharacterConditions.html',1,'']]],
+  ['rawevent_3',['RawEvent',['../structRawEvent.html',1,'']]],
+  ['rawsoundlist_4',['RawSoundList',['../structRawSoundList.html',1,'']]],
+  ['rawtimer_5',['RawTimer',['../structRawTimer.html',1,'']]],
+  ['readonlyfilesystem_6',['ReadOnlyFileSystem',['../classReadOnlyFileSystem.html',1,'']]],
   ['rect_7',['Rect',['../structRect.html',1,'']]],
   ['rect_3c_20int_20_3e_8',['Rect&lt; int &gt;',['../structRect.html',1,'']]],
   ['renderbillboard_9',['RenderBillboard',['../structRenderBillboard.html',1,'']]],
